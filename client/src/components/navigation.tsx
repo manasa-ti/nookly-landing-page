@@ -34,6 +34,7 @@ export default function Navigation() {
             <a href="#features" onClick={handleSmoothScroll("#features")} className="text-gray-700 hover:text-nookly-blue transition-colors">Features</a>
             <a href="#how-it-works" onClick={handleSmoothScroll("#how-it-works")} className="text-gray-700 hover:text-nookly-blue transition-colors">How It Works</a>
             <a href="#testimonials" onClick={handleSmoothScroll("#testimonials")} className="text-gray-700 hover:text-nookly-blue transition-colors">Stories</a>
+            <a href="#contact" onClick={handleSmoothScroll("#contact")} className="text-gray-700 hover:text-nookly-blue transition-colors">Contact</a>
             <a href="#download" onClick={handleSmoothScroll("#download")} className="bg-nookly-coral text-white px-6 py-2 rounded-full hover:bg-nookly-coral/90 transition-colors">Download</a>
           </div>
           
@@ -52,6 +53,7 @@ export default function Navigation() {
               <a href="#features" onClick={handleSmoothScroll("#features")} className="text-gray-700 hover:text-nookly-blue transition-colors px-4">Features</a>
               <a href="#how-it-works" onClick={handleSmoothScroll("#how-it-works")} className="text-gray-700 hover:text-nookly-blue transition-colors px-4">How It Works</a>
               <a href="#testimonials" onClick={handleSmoothScroll("#testimonials")} className="text-gray-700 hover:text-nookly-blue transition-colors px-4">Stories</a>
+              <a href="#contact" onClick={handleSmoothScroll("#contact")} className="text-gray-700 hover:text-nookly-blue transition-colors px-4">Contact</a>
               <a href="#download" onClick={handleSmoothScroll("#download")} className="bg-nookly-coral text-white px-6 py-2 rounded-full hover:bg-nookly-coral/90 transition-colors mx-4 text-center">Download</a>
             </div>
           </div>

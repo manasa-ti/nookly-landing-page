@@ -1,8 +1,8 @@
-# Nookly Dating App Replit Configuration
+# Nookly Dating App Website
 
 ## Overview
 
-This is a full-stack dating application called "Nookly" built with React, Express.js, and PostgreSQL. The app focuses on anonymous dating with AI-powered assistance, emphasizing personality-based connections over appearance. It features a marketing landing page and API endpoints for contact forms and newsletter signups.
+This is a static marketing website for the "Nookly" dating app built with React and Vite. The website showcases the anonymous dating platform with AI-powered assistance, emphasizing personality-based connections over appearance. It features a complete marketing landing page with static forms for contact and newsletter signup, ready for deployment on any static hosting platform.
 
 ## User Preferences
 
@@ -18,18 +18,12 @@ Preferred communication style: Simple, everyday language.
 - **State Management**: TanStack Query (React Query) for server state
 - **Form Handling**: React Hook Form with Zod validation
 
-### Backend Architecture
-- **Framework**: Express.js with TypeScript
-- **Runtime**: Node.js with ES modules
-- **Database ORM**: Drizzle ORM
-- **API Design**: RESTful endpoints with JSON responses
-- **Development**: Hot reloading with Vite middleware integration
-
-### Database Architecture
-- **Database**: PostgreSQL (configured via Drizzle)
-- **Connection**: Neon Database serverless driver
-- **Schema Management**: Drizzle migrations in `/migrations` directory
-- **Storage Interface**: Abstracted storage layer with in-memory fallback
+### Static Website Architecture
+- **Build Tool**: Vite with React plugin
+- **Asset Handling**: Real mobile app screenshots integrated
+- **Form Handling**: Static forms using mailto and localStorage
+- **Color Scheme**: Updated to match app's #2D4B8A blue color
+- **Development**: Hot reloading with Vite dev server
 
 ## Key Components
 
@@ -39,60 +33,70 @@ Preferred communication style: Simple, everyday language.
 - **Forms**: Contact form and newsletter signup with validation
 - **Responsive Design**: Mobile-first approach with Tailwind breakpoints
 
-### Backend Services
-- **Contact API**: Handles contact form submissions with validation
-- **Newsletter API**: Manages email subscriptions with duplicate checking
-- **Storage Layer**: Interface-based design supporting multiple storage backends
-- **Error Handling**: Centralized error handling with proper HTTP status codes
-
-### Database Schema
-- **Users Table**: Basic user authentication structure (id, username, password)
-- **Contact Submissions**: Stores contact form data with timestamps
-- **Newsletter Signups**: Email subscription management with uniqueness constraints
+### Static Form Components
+- **Contact Form**: Opens default email client with pre-filled message
+- **Newsletter Signup**: Saves emails to browser localStorage for basic tracking
+- **Error Handling**: Form validation with user-friendly error messages
+- **User Experience**: Toast notifications and loading states
 
 ## Data Flow
 
-1. **Client Requests**: React components use TanStack Query to make API calls
-2. **API Processing**: Express routes validate input using Zod schemas
-3. **Database Operations**: Drizzle ORM handles database interactions
-4. **Response Handling**: Structured JSON responses with error handling
-5. **UI Updates**: React Query manages cache invalidation and UI updates
+1. **Static Assets**: Vite bundles all React components and assets
+2. **Form Interactions**: Static forms handle user input without server
+3. **Client-Side Storage**: Newsletter emails stored in localStorage
+4. **Email Integration**: Contact form opens native email client
+5. **UI Updates**: React state management for form interactions
 
 ## External Dependencies
 
 ### Core Technologies
-- **@neondatabase/serverless**: PostgreSQL connection driver
-- **drizzle-orm**: Type-safe database ORM
-- **@tanstack/react-query**: Server state management
 - **@radix-ui/***: Accessible UI primitives
 - **react-hook-form**: Form state management
 - **zod**: Runtime type validation
+- **wouter**: Lightweight client-side routing
+- **tailwindcss**: Utility-first CSS framework
+- **lucide-react**: Icon library
 
 ### Development Tools
 - **Vite**: Build tool and development server
-- **TypeScript**: Type safety across the stack
-- **Tailwind CSS**: Utility-first styling
-- **ESBuild**: Production bundling for server code
+- **TypeScript**: Type safety for components
+- **Tailwind CSS**: Utility-first styling with custom Nookly theme
+- **PostCSS**: CSS processing and optimization
 
 ## Deployment Strategy
 
 ### Build Process
-- **Frontend**: Vite builds React app to `/dist/public`
-- **Backend**: ESBuild bundles server code to `/dist/index.js`
-- **Database**: Drizzle migrations run via `npm run db:push`
+- **Development**: `npm run dev` starts Vite dev server
+- **Production**: `npm run build` generates static files in `/dist`
+- **Static Assets**: All components, styles, and images bundled together
 
 ### Environment Setup
-- **Development**: `npm run dev` starts both Vite dev server and Express API
-- **Production**: `npm run build` then `npm start` for production deployment
-- **Database**: Requires `DATABASE_URL` environment variable for PostgreSQL connection
+- **Development**: `npm run dev` starts development server on port 5000
+- **Production Build**: `npm run build` creates optimized static files
+- **Deployment**: Upload `/dist` folder to any static hosting service
+
+### Deployment Options
+- **GitHub Pages**: Push to repository and enable Pages
+- **Netlify**: Connect repo with build command `npm run build`
+- **Vercel**: Import project with automatic React detection
+- **Replit Static**: Use "Static" deployment option
 
 ### Project Structure
 ```
-├── client/          # React frontend application
-├── server/          # Express.js backend API
-├── shared/          # Shared types and schemas
-├── dist/           # Production build output
-└── migrations/     # Database migration files
+├── client/src/          # React frontend application
+│   ├── components/      # UI components including static forms
+│   ├── pages/           # Main landing page
+│   └── index.css       # Custom Nookly theme with #2D4B8A colors
+├── attached_assets/     # Real mobile app screenshots
+├── dist/               # Production build output (generated)
+└── static-build-instructions.md  # Deployment guide
 ```
 
-The application uses a monorepo structure with clear separation between frontend, backend, and shared code, enabling efficient development and deployment workflows.
+The website is now a pure static application optimized for fast loading and easy deployment on any hosting platform, featuring the real Nookly app interface and matching color scheme.
+
+## Recent Changes
+- **January 30, 2025**: Converted from full-stack to static website
+- **Color Update**: Updated theme to match app's #2D4B8A blue color scheme
+- **Real Screenshots**: Integrated actual mobile app interface screenshots
+- **Static Forms**: Contact form uses mailto, newsletter uses localStorage
+- **Deployment Ready**: Prepared for static hosting deployment

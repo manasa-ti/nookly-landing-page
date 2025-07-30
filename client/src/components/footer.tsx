@@ -1,4 +1,5 @@
 import { Twitter, Instagram, Facebook } from "lucide-react";
+import NewsletterSignupStatic from "@/components/newsletter-signup-static";
 
 export default function Footer() {
   const handleSmoothScroll = (href: string) => (e: React.MouseEvent) => {
@@ -39,6 +40,9 @@ export default function Footer() {
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
+            </div>
+            <div className="mt-8">
+              <NewsletterSignupStatic />
             </div>
           </div>
           

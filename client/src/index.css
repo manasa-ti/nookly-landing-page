@@ -13,7 +13,7 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(216, 53%, 36%);
+  --primary: hsl(225, 50%, 36%);
   --primary-foreground: hsl(211, 100%, 99%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
@@ -24,12 +24,12 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Nookly Custom Colors */
-  --nookly-blue: hsl(216, 53%, 36%);
-  --nookly-dark: hsl(216, 65%, 20%);
-  --nookly-light: hsl(216, 76%, 60%);
+  /* Nookly Custom Colors - Matching #2D4B8A */
+  --nookly-blue: hsl(225, 50%, 36%);
+  --nookly-dark: hsl(225, 65%, 25%);
+  --nookly-light: hsl(225, 70%, 55%);
   --nookly-coral: hsl(0, 79%, 70%);
-  --nookly-bg: hsl(217, 32%, 97%);
+  --nookly-bg: hsl(225, 20%, 97%);
 }
 
 .dark {
@@ -43,7 +43,7 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(216, 53%, 36%);
+  --primary: hsl(225, 50%, 36%);
   --primary-foreground: hsl(211, 100%, 99%);
   --secondary: hsl(240, 3.7%, 15.9%);
   --secondary-foreground: hsl(0, 0%, 98%);
@@ -82,23 +82,23 @@
   }
 
   .bg-nookly-gradient {
-    background: linear-gradient(135deg, hsl(216, 65%, 20%) 0%, hsl(216, 53%, 36%) 50%, hsl(216, 76%, 60%) 100%);
+    background: linear-gradient(135deg, hsl(225, 65%, 25%) 0%, hsl(225, 50%, 36%) 50%, hsl(225, 70%, 55%) 100%);
   }
 
   .bg-nookly-subtle {
-    background: linear-gradient(135deg, hsl(217, 32%, 97%) 0%, hsl(217, 19%, 91%) 100%);
+    background: linear-gradient(135deg, hsl(225, 20%, 97%) 0%, hsl(225, 15%, 91%) 100%);
   }
 
   .text-nookly-blue {
-    color: hsl(216, 53%, 36%);
+    color: hsl(225, 50%, 36%);
   }
 
   .text-nookly-dark {
-    color: hsl(216, 65%, 20%);
+    color: hsl(225, 65%, 25%);
   }
 
   .text-nookly-light {
-    color: hsl(216, 76%, 60%);
+    color: hsl(225, 70%, 55%);
   }
 
   .text-nookly-coral {
@@ -106,15 +106,15 @@
   }
 
   .bg-nookly-blue {
-    background-color: hsl(216, 53%, 36%);
+    background-color: hsl(225, 50%, 36%);
   }
 
   .bg-nookly-dark {
-    background-color: hsl(216, 65%, 20%);
+    background-color: hsl(225, 65%, 25%);
   }
 
   .bg-nookly-light {
-    background-color: hsl(216, 76%, 60%);
+    background-color: hsl(225, 70%, 55%);
   }
 
   .bg-nookly-coral {
@@ -122,11 +122,11 @@
   }
 
   .bg-nookly-bg {
-    background-color: hsl(217, 32%, 97%);
+    background-color: hsl(225, 20%, 97%);
   }
 
   .border-nookly-blue {
-    border-color: hsl(216, 53%, 36%);
+    border-color: hsl(225, 50%, 36%);
   }
 
   .hover\:bg-nookly-coral:hover {
@@ -134,7 +134,7 @@
   }
 
   .hover\:text-nookly-blue:hover {
-    color: hsl(216, 53%, 36%);
+    color: hsl(225, 50%, 36%);
   }
 }
 
@@ -148,10 +148,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(216, 53%, 36%);
+  background: hsl(225, 50%, 36%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(216, 65%, 20%);
+  background: hsl(225, 65%, 25%);
 }

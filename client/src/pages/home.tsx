@@ -7,6 +7,7 @@ import AIAssistantSection from "@/components/ai-assistant-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import FutureFeaturesSection from "@/components/future-features-section";
 import FAQSection from "@/components/faq-section";
+import ContactSection from "@/components/contact-section";
 import DownloadSection from "@/components/download-section";
 import Footer from "@/components/footer";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <TestimonialsSection />
       <FutureFeaturesSection />
       <FAQSection />
+      <ContactSection />
       <DownloadSection />
       <Footer />
     </div>

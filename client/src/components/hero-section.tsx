@@ -1,4 +1,5 @@
-import { Apple, Play, Check, Signal, Wifi, Battery, Heart, Compass, MessageCircle, User } from "lucide-react";
+import { Apple, Play, Check } from "lucide-react";
+import mobileAppScreenshot from "@assets/Screenshot_1753780035_1753807852309.png";
 
 export default function HeroSection() {
   return (
@@ -50,91 +51,14 @@ export default function HeroSection() {
           </div>
           
           <div className="relative">
-            {/* Mobile App Mockup */}
+            {/* Mobile App Mockup - Using real screenshot */}
             <div className="relative mx-auto w-80 h-[640px] bg-black rounded-[3rem] p-2 shadow-2xl">
-              <div className="w-full h-full bg-nookly-blue rounded-[2.5rem] overflow-hidden relative">
-                {/* Status Bar */}
-                <div className="flex justify-between items-center p-4 text-white text-sm">
-                  <div className="flex space-x-2">
-                    <Signal className="w-4 h-4" />
-                    <Wifi className="w-4 h-4" />
-                    <Battery className="w-4 h-4" />
-                  </div>
-                  <span>2:37</span>
-                </div>
-                
-                {/* App Header */}
-                <div className="text-center mb-6">
-                  <h2 className="text-white text-2xl font-bold">nookly</h2>
-                  <p className="text-blue-200 text-sm">Never be lonely</p>
-                </div>
-                
-                {/* Profile Cards */}
-                <div className="px-4 space-y-4">
-                  {/* Profile Card 1 */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-                    <div className="flex items-start justify-between mb-3">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">O</span>
-                        </div>
-                        <div>
-                          <h3 className="text-white font-semibold">Obsidian Gaze, 37</h3>
-                          <p className="text-blue-200 text-sm">0.0 km away</p>
-                        </div>
-                      </div>
-                      <Heart className="w-6 h-6 text-nookly-coral" />
-                    </div>
-                    <p className="text-white text-sm mb-3">Looking for a companion to talk to, hang out and make good memories</p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-blue-500/30 text-white text-xs px-3 py-1 rounded-full">deep conversations</span>
-                      <span className="bg-blue-500/30 text-white text-xs px-3 py-1 rounded-full">experiences together</span>
-                    </div>
-                  </div>
-                  
-                  {/* Profile Card 2 */}
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-                    <div className="flex items-start justify-between mb-3">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
-                          <span className="text-white font-bold text-lg">A</span>
-                        </div>
-                        <div>
-                          <h3 className="text-white font-semibold">Artisan Soul, 37</h3>
-                          <p className="text-blue-200 text-sm">0.0 km away</p>
-                        </div>
-                      </div>
-                      <Heart className="w-6 h-6 text-nookly-coral" />
-                    </div>
-                    <p className="text-white text-sm mb-3">New here, looking for something new</p>
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-blue-500/30 text-white text-xs px-3 py-1 rounded-full">deep conversations</span>
-                      <span className="bg-blue-500/30 text-white text-xs px-3 py-1 rounded-full">engaging chats</span>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Bottom Navigation */}
-                <div className="absolute bottom-0 left-0 right-0 bg-nookly-dark/80 backdrop-blur-sm">
-                  <div className="flex justify-around py-4">
-                    <div className="text-center">
-                      <Compass className="w-6 h-6 text-nookly-coral mx-auto mb-1" />
-                      <p className="text-white text-xs">Discover</p>
-                    </div>
-                    <div className="text-center">
-                      <Heart className="w-6 h-6 text-gray-400 mx-auto mb-1" />
-                      <p className="text-gray-400 text-xs">Likes</p>
-                    </div>
-                    <div className="text-center">
-                      <MessageCircle className="w-6 h-6 text-gray-400 mx-auto mb-1" />
-                      <p className="text-gray-400 text-xs">Chat</p>
-                    </div>
-                    <div className="text-center">
-                      <User className="w-6 h-6 text-gray-400 mx-auto mb-1" />
-                      <p className="text-gray-400 text-xs">Profile</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="w-full h-full rounded-[2.5rem] overflow-hidden">
+                <img 
+                  src={mobileAppScreenshot}
+                  alt="Nookly App Interface - Anonymous Dating Profiles"
+                  className="w-full h-full object-cover rounded-[2.5rem]"
+                />
               </div>
             </div>
             
