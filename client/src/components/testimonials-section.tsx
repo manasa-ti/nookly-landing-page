@@ -23,14 +23,15 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-white">
+    <section id="testimonials" className="py-20 bg-white hidden">
+      {/* Hidden for future use - Real Stories, Real Connections section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-nookly-blue mb-4">
             Real Stories, Real Connections
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover how Nookly has helped thousands find meaningful companionship and never be lonely again.
+            Discover how Nookly has helped thousands find meaningful companionship and find their nook.
           </p>
         </div>
         

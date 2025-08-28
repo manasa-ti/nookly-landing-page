@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-2xl font-bold">nookly</span>
-                <p className="text-sm text-gray-400 -mt-1">Never be lonely</p>
+                <p className="text-sm text-gray-400 -mt-1">Find your nook</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Nookly. All rights reserved. Never be lonely again.</p>
+                      <p>&copy; 2025 Nookly. All rights reserved. Find your nook.</p>
         </div>
       </div>
     </footer>

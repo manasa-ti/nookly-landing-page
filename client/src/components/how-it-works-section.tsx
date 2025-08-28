@@ -7,7 +7,7 @@ export default function HowItWorksSection() {
             How Nookly Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Simple steps to find your perfect anonymous companion and never be lonely again.
+            Simple steps to find your perfect anonymous companion and find your nook.
           </p>
         </div>
         

@@ -1,4 +1,4 @@
-import { Gamepad2, HeartCrack, ArrowRight } from "lucide-react";
+import { Gamepad2, HeartCrack, ArrowRight, Brain } from "lucide-react";
 
 export default function FutureFeaturesSection() {
   return (
@@ -15,15 +15,15 @@ export default function FutureFeaturesSection() {
         
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="bg-white rounded-3xl p-8 shadow-lg">
-            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
-              <Gamepad2 className="w-8 h-8 text-white" />
+            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+              <Brain className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">Interactive Fantasy Games</h3>
+            <h3 className="text-2xl font-bold text-nookly-blue mb-4">Dating Feedback & Insights</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Explore compatibility through engaging fantasy role-playing games that reveal personality traits and preferences in a fun, pressure-free environment.
+              Gain valuable insights into your dating patterns with AI-powered analysis of message exchanges and partner feedback, helping you understand why connections end and improve your relationship skills.
             </p>
-            <div className="flex items-center space-x-2 text-purple-600">
-              <span className="text-sm font-medium">Beta testing starts Q2 2025</span>
+            <div className="flex items-center space-x-2 text-blue-600">
+              <span className="text-sm font-medium">Coming Q2 2025</span>
               <ArrowRight className="w-4 h-4" />
             </div>
           </div>

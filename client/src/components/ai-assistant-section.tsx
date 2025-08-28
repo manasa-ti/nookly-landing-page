@@ -55,19 +55,15 @@ export default function AIAssistantSection() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
                   <Lightbulb className="w-5 h-5 text-nookly-coral" />
-                  <span>Conversation starters</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-nookly-coral" />
-                  <span>Compatibility analysis</span>
+                  <span>Conversation Helper</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-nookly-coral" />
-                  <span>Date location finder</span>
+                  <span>Date Planner</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MessageSquare className="w-5 h-5 text-nookly-coral" />
-                  <span>Conversation coaching</span>
+                  <span>Dating Coach Assistant</span>
                 </div>
               </div>
             </div>
@@ -83,7 +79,7 @@ export default function AIAssistantSection() {
               </div>
               <div className="bg-nookly-coral rounded-xl p-4 text-white">
                 <p className="font-medium mb-2">AI Assistant:</p>
-                <p>"That's completely normal! Based on your conversation history, I suggest starting with a casual coffee meetup. Here are some topics you both enjoy discussing..."</p>
+                <p>"That's completely normal! Based on your personalities and shared interests, I suggest starting with a casual coffee meetup. Here are some topics you both enjoy discussing..."</p>
               </div>
               <Button className="w-full bg-white/20 hover:bg-white/30 text-white border-0">
                 Ask AI Assistant

@@ -24,13 +24,14 @@ export default function ContactSection() {
                 <div>
                   <h3 className="text-xl font-bold text-nookly-blue mb-2">Email Us</h3>
                   <p className="text-gray-600">Drop us a line anytime</p>
-                  <a href="mailto:contact@nookly.com" className="text-nookly-coral hover:underline">
-                    contact@nookly.com
+                  <a href="mailto:app.nookly@gmail.com" className="text-nookly-coral hover:underline">
+                    app.nookly@gmail.com
                   </a>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4">
+              {/* Hidden for future use - Call Us section */}
+              <div className="flex items-start space-x-4 hidden">
                 <div className="w-12 h-12 bg-nookly-gradient rounded-2xl flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
@@ -43,7 +44,8 @@ export default function ContactSection() {
                 </div>
               </div>
               
-              <div className="flex items-start space-x-4">
+              {/* Hidden for future use - Visit Us section */}
+              <div className="flex items-start space-x-4 hidden">
                 <div className="w-12 h-12 bg-nookly-gradient rounded-2xl flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>

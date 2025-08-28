@@ -39,27 +39,27 @@ export default function FeaturesSection() {
             </div>
           </div>
           
-          {/* Feature 2: True Compatibility */}
+          {/* Feature 2: Engagement Driven */}
           <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
             <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
-              <Heart className="w-8 h-8 text-white" />
+              <Puzzle className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">True Compatibility Over Looks</h3>
+            <h3 className="text-2xl font-bold text-nookly-blue mb-4">Engagement Driven</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              With anonymity at its core, conversations and genuine connection happen first. Get to know someone's personality, thoughts, and feelings before any reveal.
+              Go beyond simple messaging with interactive activities designed to help couples discover each other deeply. From virtual games to shared experiences, every interaction builds meaningful connections.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Personality-first matching</span>
+                <span className="text-sm text-gray-600">Interactive games & challenges</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Brain className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Deep conversation starters</span>
+                <span className="text-sm text-gray-600">Shared experience builder</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Puzzle className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Compatibility analysis</span>
+                <TrendingUp className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">Engagement analytics</span>
               </div>
             </div>
           </div>
