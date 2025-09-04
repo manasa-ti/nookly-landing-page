@@ -26,7 +26,7 @@ export default function Navigation() {
             </div>
             <div>
               <span className="text-2xl font-bold text-nookly-blue">nookly</span>
-              <p className="text-xs text-gray-500 -mt-1">Find your nook</p>
+              <p className="text-xs text-gray-500 -mt-1">No more lonely</p>
             </div>
           </div>
           

@@ -5,7 +5,7 @@ export default function DownloadSection() {
     <section id="download" className="py-20 bg-nookly-gradient text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-          Find Your Nook
+          No more lonely
         </h2>
         <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
           Join thousands who have found meaningful connections through anonymous profiles and AI-powered matching. Download Nookly today and start your journey to genuine companionship.

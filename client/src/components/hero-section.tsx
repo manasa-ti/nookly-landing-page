@@ -9,8 +9,8 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Never Be 
-                <span className="text-nookly-coral"> Lonely</span>
+                No more 
+                <span className="text-nookly-coral"> lonely</span>
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">
                 Find discreet companionship & connect deeply through anonymous profiles and AI-powered matching.
