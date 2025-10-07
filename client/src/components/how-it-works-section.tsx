@@ -7,19 +7,19 @@ export default function HowItWorksSection() {
             How Nookly Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Simple steps to find your perfect anonymous companion and no more lonely.
+            Your complete dating journey from first match to lasting connection—Nookly guides you through every step.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {/* Step 1 */}
           <div className="text-center">
             <div className="w-20 h-20 bg-nookly-gradient rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-white text-2xl font-bold">1</span>
             </div>
-            <h3 className="text-xl font-bold text-nookly-blue mb-4">Create Anonymous Profile</h3>
+            <h3 className="text-xl font-bold text-nookly-blue mb-4">Create Your Profile</h3>
             <p className="text-gray-600">
-              Set up your profile with personality details, interests, and what you're looking for – all while staying completely anonymous.
+              Set up with your interests, dating goals, and what you're looking for. Add a photo if you want, or keep it text-based—your choice.
             </p>
           </div>
           
@@ -28,9 +28,9 @@ export default function HowItWorksSection() {
             <div className="w-20 h-20 bg-nookly-gradient rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-white text-2xl font-bold">2</span>
             </div>
-            <h3 className="text-xl font-bold text-nookly-blue mb-4">AI-Powered Matching</h3>
+            <h3 className="text-xl font-bold text-nookly-blue mb-4">Smart Matching</h3>
             <p className="text-gray-600">
-              Our AI analyzes compatibility based on personality, interests, and conversation style to find your perfect matches.
+              Our AI analyzes compatibility based on interests, location, dating objectives, and personality to recommend great matches.
             </p>
           </div>
           
@@ -39,9 +39,9 @@ export default function HowItWorksSection() {
             <div className="w-20 h-20 bg-nookly-gradient rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-white text-2xl font-bold">3</span>
             </div>
-            <h3 className="text-xl font-bold text-nookly-blue mb-4">Connect & Chat</h3>
+            <h3 className="text-xl font-bold text-nookly-blue mb-4">Break the Ice Naturally</h3>
             <p className="text-gray-600">
-              Start meaningful conversations with AI-suggested topics, play interactive games, and build genuine connections.
+              Start conversations with AI-suggested topics or challenge your match to games. No more "hey" messages.
             </p>
           </div>
           
@@ -50,11 +50,23 @@ export default function HowItWorksSection() {
             <div className="w-20 h-20 bg-nookly-gradient rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-white text-2xl font-bold">4</span>
             </div>
-            <h3 className="text-xl font-bold text-nookly-blue mb-4">Reveal When Ready</h3>
+            <h3 className="text-xl font-bold text-nookly-blue mb-4">Get AI Guidance</h3>
             <p className="text-gray-600">
-              Once you've built trust and connection, choose to reveal your identity and take the relationship to the next level.
+              Stuck on what to say? Need date ideas? From first date nerves to relationship advice, your AI companion is there throughout your dating journey.
             </p>
           </div>
+          
+          {/* Step 5 */}
+          <div className="text-center">
+            <div className="w-20 h-20 bg-nookly-gradient rounded-full flex items-center justify-center mx-auto mb-6">
+              <span className="text-white text-2xl font-bold">5</span>
+            </div>
+            <h3 className="text-xl font-bold text-nookly-blue mb-4">Connect Beyond Chat</h3>
+            <p className="text-gray-600">
+              Enjoy virtual music dates, plan in-person meetups with AI recommendations, and build real connections.
+            </p>
+          </div>
+          
         </div>
       </div>
     </section>

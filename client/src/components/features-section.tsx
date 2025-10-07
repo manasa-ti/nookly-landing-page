@@ -1,4 +1,4 @@
-import { VenetianMask, Heart, Bot, Shield, EyeOff, UserX, MessageCircle, Brain, Puzzle, Wand2, Calendar, TrendingUp } from "lucide-react";
+import { Bot, Gamepad2, Shield, MessageSquare, Calendar, TrendingUp, Brain, HeartCrack, GamepadIcon, Lock, Eye, Users } from "lucide-react";
 
 export default function FeaturesSection() {
   return (
@@ -9,82 +9,86 @@ export default function FeaturesSection() {
             Why Choose Nookly?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience dating differently with our three core pillars that make meaningful connections inevitable.
+            More than just matching. Nookly is your complete dating companion with AI guidance, interactive engagement, and advanced safety features.
           </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-12">
-          {/* Feature 1: Anonymity */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
-              <VenetianMask className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">Unmatched Anonymity</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Connect authentically without revealing your identity until you're ready. No judgment, no pressure – just genuine conversation and connection based on who you really are.
-            </p>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Shield className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Complete privacy protection</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <EyeOff className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Anonymous profile system</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <UserX className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Reveal when you're comfortable</span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Feature 2: Engagement Driven */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
-              <Puzzle className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">Engagement Driven</h3>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              Go beyond simple messaging with interactive activities designed to help couples discover each other deeply. From virtual games to shared experiences, every interaction builds meaningful connections.
-            </p>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MessageCircle className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Interactive games & challenges</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Brain className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Shared experience builder</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <TrendingUp className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Engagement analytics</span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Feature 3: AI Assistant */}
+          {/* Feature 1: AI Dating Coach */}
           <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
             <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
               <Bot className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">AI Dating Assistant</h3>
+            <h3 className="text-2xl font-bold text-nookly-blue mb-4">🤖 Your Personal Dating Coach</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Our AI helps you find partners 10x faster, suggests engaging conversation topics, plans perfect dates, and provides relationship guidance every step of the way.
+              Meet your AI Dating Assistant—available 24/7 to help you navigate every dating moment. Get conversation suggestions, date ideas, relationship advice, and emotional support after tough experiences.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Wand2 className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Smart conversation helpers</span>
+                <MessageSquare className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">Context-aware conversation starters</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Calendar className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Intelligent date planning</span>
+                <span className="text-sm text-gray-600">Personalized date recommendations</span>
               </div>
               <div className="flex items-center space-x-3">
-                <TrendingUp className="w-5 h-5 text-nookly-coral" />
-                <span className="text-sm text-gray-600">Relationship insights</span>
+                <Brain className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">Relationship guidance and insights</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <HeartCrack className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">Breakup support (Coming Q3 2025)</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Feature 2: Beyond Swiping & Texting */}
+          <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
+              <Gamepad2 className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-2xl font-bold text-nookly-blue mb-4">🎮 Beyond Swiping & Texting</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Dating should be fun and engaging. Challenge matches to interactive games, enjoy virtual music dates together, and build connections through shared experiences—all before your first in-person meet.
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <GamepadIcon className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">4 icebreaker games (Truth or Thrill, Memory Sparks, etc.)</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Users className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">Virtual shared experiences (Coming Soon)</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Brain className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">AI-suggested activities based on interests</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Feature 3: Safe & Private by Design */}
+          <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+            <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
+              <Shield className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-2xl font-bold text-nookly-blue mb-4">🔒 Safe & Private by Design</h3>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Date with confidence using end-to-end encryption, advanced scam detection, and privacy controls that let you share what you want, when you want.
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Shield className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">7-type scam detection (romance fraud, catfishing, etc.)</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Lock className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">End-to-end encrypted messaging</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Eye className="w-5 h-5 text-nookly-coral" />
+                <span className="text-sm text-gray-600">Optional profile photos—your choice</span>
               </div>
             </div>
           </div>

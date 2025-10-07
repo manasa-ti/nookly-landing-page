@@ -1,0 +1,5 @@
+timestamp,email,platform,ip_address
+2025-10-07T05:56:22.438Z,test@example.com,ios,::1
+2025-10-07T06:00:16.485Z,user@example.com,android,::1
+2025-10-07T06:02:47.945Z,manasatimalapura@gmail.com,android,::1
+2025-10-07T06:06:02.464Z,rahulkamal45@gmail.com,ios,::1

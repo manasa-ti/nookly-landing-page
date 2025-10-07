@@ -1,7 +1,17 @@
 import { Apple, Play, Check } from "lucide-react";
+import { useState } from "react";
 import mobileAppScreenshot from "@assets/Screenshot_1753780035_1753807852309.png";
+import EmailCollectionModal from "./email-collection-modal";
 
 export default function HeroSection() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPlatform, setSelectedPlatform] = useState<'ios' | 'android'>('ios');
+
+  const handleDownloadClick = (platform: 'ios' | 'android') => {
+    setSelectedPlatform(platform);
+    setModalOpen(true);
+  };
+
   return (
     <section className="pt-24 pb-16 bg-nookly-gradient text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +23,7 @@ export default function HeroSection() {
                 <span className="text-nookly-coral"> lonely</span>
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed">
-                Find discreet companionship & connect deeply through anonymous profiles and AI-powered matching.
+                No more scrolling alone! Find your companion for late-night talks, fun experiences, and lasting connections.
               </p>
             </div>
             
@@ -22,31 +32,37 @@ export default function HeroSection() {
                 <div className="w-6 h-6 bg-nookly-coral rounded-full flex items-center justify-center">
                   <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-lg">Complete anonymity until you're ready</span>
+                <span className="text-lg">Connect privately, engage deeply</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 bg-nookly-coral rounded-full flex items-center justify-center">
                   <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-lg">AI Dating Assistant for better connections</span>
+                <span className="text-lg">Get AI guidance throughout your journey</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 bg-nookly-coral rounded-full flex items-center justify-center">
                   <Check className="w-4 h-4 text-white" />
                 </div>
-                <span className="text-lg">Interactive games & meaningful conversations</span>
+                <span className="text-lg">Experience complete dating in one place</span>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#" className="bg-nookly-coral hover:bg-nookly-coral/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2">
+              <button 
+                onClick={() => handleDownloadClick('ios')}
+                className="bg-nookly-coral hover:bg-nookly-coral/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2"
+              >
                 <Apple className="w-5 h-5" />
-                <span>Download for iOS</span>
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all backdrop-blur-sm flex items-center justify-center space-x-2">
+                <span>Get Early Access</span>
+              </button>
+              <button 
+                onClick={() => handleDownloadClick('android')}
+                className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all backdrop-blur-sm flex items-center justify-center space-x-2"
+              >
                 <Play className="w-5 h-5" />
-                <span>Get on Android</span>
-              </a>
+                <span>Get Early Access</span>
+              </button>
             </div>
           </div>
           
@@ -68,6 +84,12 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+      
+      <EmailCollectionModal 
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        platform={selectedPlatform}
+      />
     </section>
   );
 }

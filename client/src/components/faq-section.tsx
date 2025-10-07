@@ -6,24 +6,36 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "How does anonymity work on Nookly?",
-      answer: "Your real identity is completely hidden until you choose to reveal it. You can create a unique anonymous persona, use generated usernames, and chat freely without sharing personal details like your real name, photos, or location until you're comfortable."
+      question: "What is the AI Dating Assistant?",
+      answer: "Your personal dating companion that helps throughout your journey. It analyzes your conversations to suggest topics, recommends date ideas based on shared interests, provides relationship guidance, and offers support during difficult times. Think of it as having a dating coach in your pocket 24/7."
     },
     {
-      question: "Is my data safe and private?",
-      answer: "Absolutely. We use end-to-end encryption for all conversations, don't store personal information unnecessarily, and give you complete control over what you share and when. Your privacy is our top priority."
+      question: "What are the interactive games?",
+      answer: "We offer four icebreaker games—Truth or Thrill, Memory Sparks, Would You Rather, and Guess Me—designed to help you learn about matches in a fun, low-pressure way. Games are real-time multiplayer and beat the usual \"how was your day?\" conversations."
     },
     {
-      question: "How does the AI Dating Assistant work?",
-      answer: "Our AI analyzes your conversations, interests, and personality to provide personalized suggestions for conversation topics, date ideas, and relationship advice. It learns your preferences to offer increasingly relevant guidance."
+      question: "How does the AI Date Planner work?",
+      answer: "Our AI analyzes both your profiles, conversation history, shared interests, and location to suggest perfect date ideas. If you both love photography, it might suggest a scenic photo walk. If you're both foodies, it'll find highly-rated restaurants you'll both enjoy. (Coming Q2 2025)"
     },
     {
-      question: "What types of connections can I find?",
-      answer: "Nookly supports all types of connections - from casual friendships and deep emotional companionship to serious romantic relationships. You define what you're looking for, and our matching algorithm finds compatible people with similar goals."
+      question: "Is this just another swiping app?",
+      answer: "No. Nookly is a complete dating experience platform. We handle everything from matching to conversation help to date planning to breakup support. It's an end-to-end companion for your entire dating journey."
     },
     {
-      question: "How is Nookly different from other dating apps?",
-      answer: "Unlike appearance-focused apps, Nookly prioritizes personality and genuine connection through anonymity. Our AI assistant provides active dating support, and our interactive games help reveal compatibility in fun ways that traditional apps can't match."
+      question: "How private is my information?",
+      answer: "You control what you share. Use a custom username, make photos optional, and share personal details only when comfortable. All messages are end-to-end encrypted, and we have advanced scam detection to keep you safe."
+    },
+    {
+      question: "What are virtual shared experiences?",
+      answer: "Features that let you connect with matches before meeting in person—like listening to music together, watching content simultaneously, or playing activities within the app. Coming soon!"
+    },
+    {
+      question: "Is Nookly only for finding matches?",
+      answer: "No. Nookly supports your entire dating journey—from first match through building lasting relationships. We offer icebreaker games for new connections AND intimacy-building features like \"Spice It Up\" for established couples who want to deepen their connection in a safe, consensual way."
+    },
+    {
+      question: "What is Spice It Up?",
+      answer: "A progressive game designed for couples who want to explore intimacy through guided conversation. It starts light and playful, with both partners controlling if and when to progress to more intimate stages. Every round includes skip options and consent checks—it's about building connection at your comfort level."
     }
   ];
 
@@ -35,7 +47,7 @@ export default function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600">
-            Everything you need to know about anonymous dating with Nookly
+            Everything you need to know about your complete dating companion
           </p>
         </div>
         

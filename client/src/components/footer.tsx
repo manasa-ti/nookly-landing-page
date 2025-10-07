@@ -1,5 +1,4 @@
 import { Twitter, Instagram, Facebook } from "lucide-react";
-import NewsletterSignupStatic from "@/components/newsletter-signup-static";
 
 export default function Footer() {
   const handleSmoothScroll = (href: string) => (e: React.MouseEvent) => {
@@ -28,7 +27,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Find discreet companionship and connect deeply through anonymous profiles, AI-powered matching, and meaningful conversations.
+              Your complete dating companion for meaningful connections. Get AI guidance, play interactive games, and find support throughout your entire dating journey.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
@@ -41,9 +40,6 @@ export default function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
-            <div className="mt-8">
-              <NewsletterSignupStatic />
-            </div>
           </div>
           
           <div>
@@ -51,7 +47,6 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-300">
               <li><a href="#features" onClick={handleSmoothScroll("#features")} className="hover:text-white transition-colors">Features</a></li>
               <li><a href="#how-it-works" onClick={handleSmoothScroll("#how-it-works")} className="hover:text-white transition-colors">How It Works</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
               <li><a href="#" className="hover:text-white transition-colors">AI Assistant</a></li>
             </ul>
           </div>
@@ -59,10 +54,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-4">Support</h4>
             <ul className="space-y-3 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Safety</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="https://csae-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Safety</a></li>
+              <li><a href="https://privacy-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="https://terms-of-use.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms of Service</a></li>
             </ul>
           </div>
         </div>
