@@ -6,36 +6,40 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "What is the AI Dating Assistant?",
-      answer: "Your personal dating companion that helps throughout your journey. It analyzes your conversations to suggest topics, recommends date ideas based on shared interests, provides relationship guidance, and offers support during difficult times. Think of it as having a dating coach in your pocket 24/7."
+      question: "What is Nookly?",
+      answer: "Nookly is a companion app designed for adults who feel lonely, regardless of their relationship status. It's a safe, private space to find genuine connections through meaningful conversations and interactive games—without the pressure of dating or revealing your identity."
+    },
+    {
+      question: "How is Nookly different from dating apps?",
+      answer: "Unlike dating apps focused on romance and swiping, Nookly is about companionship and authentic human connection. You don't need photos, you can stay completely anonymous, and there's no pressure for commitment. Whether you're single, in a relationship, or just need someone to talk to—Nookly welcomes you."
     },
     {
       question: "What are the interactive games?",
-      answer: "We offer four icebreaker games—Truth or Thrill, Memory Sparks, Would You Rather, and Guess Me—designed to help you learn about matches in a fun, low-pressure way. Games are real-time multiplayer and beat the usual \"how was your day?\" conversations."
+      answer: "We offer four engaging games—Truth or Thrill, Memory Sparks, Would You Rather, and Guess Me—designed to help you connect with companions in a fun, meaningful way. These games break the ice naturally and help you learn about each other beyond surface-level chat."
     },
     {
-      question: "How does the AI Date Planner work?",
-      answer: "Our AI analyzes both your profiles, conversation history, shared interests, and location to suggest perfect date ideas. If you both love photography, it might suggest a scenic photo walk. If you're both foodies, it'll find highly-rated restaurants you'll both enjoy. (Coming Q2 2025)"
+      question: "Do I have to share my photo or real name?",
+      answer: "Absolutely not. Privacy is at the core of Nookly. You can use a custom username, skip adding photos entirely, and share only what you're comfortable with. Your identity is yours to control—always."
     },
     {
-      question: "Is this just another swiping app?",
-      answer: "No. Nookly is a complete dating experience platform. We handle everything from matching to conversation help to date planning to breakup support. It's an end-to-end companion for your entire dating journey."
+      question: "How do AI conversation starters work?",
+      answer: "When you match with someone, our AI suggests personalized conversation topics based on your shared interests and profiles. This helps break the ice naturally and ensures you never face awkward silences or boring 'hey' messages."
     },
     {
-      question: "How private is my information?",
-      answer: "You control what you share. Use a custom username, make photos optional, and share personal details only when comfortable. All messages are end-to-end encrypted, and we have advanced scam detection to keep you safe."
+      question: "Is Nookly safe and private?",
+      answer: "Yes. All your information remains private, and you control what you share and when. We've built Nookly to be a judgment-free, safe space where you can be yourself without fear of exposure or criticism."
     },
     {
-      question: "What are virtual shared experiences?",
-      answer: "Features that let you connect with matches before meeting in person—like listening to music together, watching content simultaneously, or playing activities within the app. Coming soon!"
+      question: "Who is Nookly for?",
+      answer: "Nookly is for anyone between 30-50 who experiences loneliness—professionals with busy lives, people in relationships seeking platonic connection, individuals who value privacy, or anyone tired of superficial interactions. If you need genuine companionship without complications, Nookly is for you."
     },
     {
-      question: "Is Nookly only for finding matches?",
-      answer: "No. Nookly supports your entire dating journey—from first match through building lasting relationships. We offer icebreaker games for new connections AND intimacy-building features like \"Spice It Up\" for established couples who want to deepen their connection in a safe, consensual way."
+      question: "What features are coming soon?",
+      answer: "We're constantly improving Nookly based on user feedback. Upcoming features include Heat Up mode for deeper conversations, shared virtual experiences to enjoy together, and more interactive ways to build meaningful connections."
     },
     {
-      question: "What is Spice It Up?",
-      answer: "A progressive game designed for couples who want to explore intimacy through guided conversation. It starts light and playful, with both partners controlling if and when to progress to more intimate stages. Every round includes skip options and consent checks—it's about building connection at your comfort level."
+      question: "Is Nookly free?",
+      answer: "Yes! Nookly is currently completely free to use with all features available. We're focused on building a strong community first and will introduce optional premium features in the future based on what our users want most."
     }
   ];
 
@@ -43,30 +47,30 @@ export default function FAQSection() {
     <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-nookly-blue mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600">
-            Everything you need to know about your complete dating companion
+            Everything you need to know about finding companionship on Nookly
           </p>
         </div>
         
         <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-nookly-subtle rounded-2xl p-6">
+            <div key={index} className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
               <button
                 className="w-full flex items-center justify-between text-left"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <h3 className="text-xl font-bold text-nookly-blue">{faq.question}</h3>
+                <h3 className="text-xl font-bold text-blue-900 pr-4">{faq.question}</h3>
                 {openIndex === index ? (
-                  <ChevronUp className="w-6 h-6 text-nookly-blue flex-shrink-0 ml-4" />
+                  <ChevronUp className="w-6 h-6 text-blue-900 flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="w-6 h-6 text-nookly-blue flex-shrink-0 ml-4" />
+                  <ChevronDown className="w-6 h-6 text-blue-900 flex-shrink-0" />
                 )}
               </button>
               {openIndex === index && (
-                <p className="text-gray-600 mt-3">
+                <p className="text-gray-600 mt-4 leading-relaxed">
                   {faq.answer}
                 </p>
               )}

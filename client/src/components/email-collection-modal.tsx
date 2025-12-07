@@ -20,7 +20,7 @@ export default function EmailCollectionModal({ isOpen, onClose, platform }: Emai
     setError("");
 
     try {
-      const response = await fetch('/api/early-access', {
+      const response = await fetch('https://dev.nookly.app/api/early-access', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
-import { Apple, Play, Check } from "lucide-react";
+import { Apple, Play } from "lucide-react";
 import { useState } from "react";
-import mobileAppScreenshot from "@assets/Screenshot_1753780035_1753807852309.png";
+import mobileAppScreenshot from "@assets/Screenshot_1764935027.png";
 import EmailCollectionModal from "./email-collection-modal";
 
 export default function HeroSection() {
@@ -13,7 +13,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="pt-24 pb-16 bg-nookly-gradient text-white overflow-hidden">
+    <section className="pt-24 pb-16 text-white overflow-hidden" style={{ backgroundColor: '#1d335f' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -28,24 +28,9 @@ export default function HeroSection() {
             </div>
             
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-nookly-coral rounded-full flex items-center justify-center">
-                  <Check className="w-4 h-4 text-white" />
-                </div>
-                <span className="text-lg">Connect privately, engage deeply</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-nookly-coral rounded-full flex items-center justify-center">
-                  <Check className="w-4 h-4 text-white" />
-                </div>
-                <span className="text-lg">Get AI guidance throughout your journey</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 bg-nookly-coral rounded-full flex items-center justify-center">
-                  <Check className="w-4 h-4 text-white" />
-                </div>
-                <span className="text-lg">Experience complete dating in one place</span>
-              </div>
+              <p className="text-lg text-blue-100 leading-relaxed">
+                Experience genuine connection without the pressure. Chat, play games, and share moments with like-minded companions in a safe, judgment-free space. Your identity, your choice.
+              </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">

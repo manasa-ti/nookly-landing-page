@@ -1,115 +1,115 @@
-import { Heart, Calendar, Gamepad2, Brain, Shield, Users } from "lucide-react";
+import { Heart, MessageCircle, Gamepad2, Shield } from "lucide-react";
 
 export default function CompleteDatingExperienceSection() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-nookly-blue mb-4">
-            Complete Dating Experience
+          <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
+            More Than Just Chatting
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Nookly Does More Than Matching
+            nookly helps you build genuine connections through meaningful engagement
           </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-12">
-          {/* Before the First Date */}
-          <div className="bg-nookly-subtle rounded-3xl p-8">
+          {/* Break the Ice */}
+          <div className="bg-gray-50 rounded-3xl p-8 hover:shadow-xl transition-shadow">
             <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
               <Gamepad2 className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">Before the First Date</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mb-4">Break the Ice</h3>
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Interactive games to get to know each other</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>AI-powered conversation starters tailored to your interests</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>AI conversation helpers for natural flow</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Interactive games to naturally get to know each other</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Virtual shared experiences to test compatibility</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Truth or Thrill, Would You Rather, and more</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Smart date planning based on both profiles</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>No awkward silences or boring "hey" messages</span>
               </li>
             </ul>
           </div>
           
-          {/* During Your Dating Journey */}
-          <div className="bg-nookly-subtle rounded-3xl p-8">
+          {/* Build Connection */}
+          <div className="bg-gray-50 rounded-3xl p-8 hover:shadow-xl transition-shadow">
             <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
-              <Calendar className="w-8 h-8 text-white" />
+              <MessageCircle className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">During Your Dating Journey</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mb-4">Build Connection</h3>
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Real-time guidance and conversation tips</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Engage in meaningful conversations at your own pace</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Date idea suggestions tailored to you both</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Progress from Open Up to Get Close naturally</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Relationship insights and compatibility feedback</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Share memories and experiences through Memory Sparks</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Safe, encrypted communication</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Connect whenever you need someone to talk to</span>
               </li>
             </ul>
           </div>
           
-          {/* Building Deeper Connection */}
-          <div className="bg-nookly-subtle rounded-3xl p-8">
+          {/* Stay Safe & Private */}
+          <div className="bg-gray-50 rounded-3xl p-8 hover:shadow-xl transition-shadow">
             <div className="w-16 h-16 bg-nookly-gradient rounded-2xl flex items-center justify-center mb-6">
-              <Heart className="w-8 h-8 text-white" />
+              <Shield className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-nookly-blue mb-4">Building Deeper Connection</h3>
+            <h3 className="text-2xl font-bold text-blue-900 mb-4">Stay Safe & Private</h3>
             <ul className="space-y-3 text-gray-600">
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Progress from casual chat to intimate conversation naturally</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Complete anonymity—no photos or real names required</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Consent-based intimacy games for couples (Spice It Up - Coming Soon)</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>You control what you share and when</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Both partners control comfort levels</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Judgment-free zone for authentic connection</span>
               </li>
               <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-nookly-coral rounded-full mt-2 flex-shrink-0"></div>
-                <span>Safe space for exploring connection</span>
+                <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Safe space to be yourself without fear</span>
               </li>
             </ul>
           </div>
         </div>
         
-        {/* When Things Get Hard */}
+        {/* Coming Soon */}
         <div className="mt-12">
-          <div className="bg-gradient-to-r from-nookly-blue to-nookly-coral rounded-3xl p-8 text-white">
+          <div className="bg-nookly-gradient rounded-3xl p-8 text-white">
             <div className="flex items-center justify-center mb-6">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                <Brain className="w-8 h-8 text-white" />
+                <Heart className="w-8 h-8 text-white" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-center mb-4">When Things Get Hard</h3>
-            <div className="grid md:grid-cols-2 gap-6 text-center">
+            <h3 className="text-2xl font-bold text-center mb-6">Coming Soon</h3>
+            <div className="grid md:grid-cols-2 gap-6 text-center max-w-3xl mx-auto">
               <div>
-                <h4 className="font-semibold mb-2">Breakup healing support (Coming Q3 2025)</h4>
-                <p className="text-white/80 text-sm">Personalized emotional support and healing activities</p>
+                <h4 className="font-semibold mb-2">Heat Up Mode</h4>
+                <p className="text-white/80 text-sm">Deeper, more intimate conversations for established connections</p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">Dating pattern analysis (Coming Q2 2025)</h4>
-                <p className="text-white/80 text-sm">Professional guidance recommendations to improve future matches</p>
+                <h4 className="font-semibold mb-2">Shared Experiences</h4>
+                <p className="text-white/80 text-sm">Virtual activities to enjoy together and build memories</p>
               </div>
             </div>
           </div>
