@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Your complete dating companion for meaningful connections. Get AI guidance, play interactive games, and find support throughout your entire dating journey.
+              Your companion for meaningful connections.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
