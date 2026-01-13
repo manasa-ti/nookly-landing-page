@@ -1,4 +1,5 @@
 import { Twitter, Instagram, Facebook } from "lucide-react";
+import echoLogo from "@assets/echo_logo.svg";
 
 export default function Footer() {
   const handleSmoothScroll = (href: string) => (e: React.MouseEvent) => {
@@ -18,9 +19,11 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-nookly-gradient rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">N</span>
-              </div>
+              <img 
+                src={echoLogo} 
+                alt="Nookly Logo" 
+                className="w-12 h-12 object-contain rounded-xl"
+              />
               <div>
                 <span className="text-2xl font-bold">nookly</span>
                 <p className="text-sm text-gray-400 -mt-1">No more lonely</p>

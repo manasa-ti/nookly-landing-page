@@ -1,17 +1,7 @@
-import { Apple, Play } from "lucide-react";
-import { useState } from "react";
+import { Globe2, Play } from "lucide-react";
 import mobileAppScreenshot from "@assets/Screenshot_1764935027.png";
-import EmailCollectionModal from "./email-collection-modal";
 
 export default function HeroSection() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedPlatform, setSelectedPlatform] = useState<'ios' | 'android'>('ios');
-
-  const handleDownloadClick = (platform: 'ios' | 'android') => {
-    setSelectedPlatform(platform);
-    setModalOpen(true);
-  };
-
   return (
     <section className="pt-24 pb-16 text-white overflow-hidden" style={{ backgroundColor: '#1d335f' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,20 +24,24 @@ export default function HeroSection() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button 
-                onClick={() => handleDownloadClick('ios')}
+              <a 
+                href="https://app.nookly.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-nookly-coral hover:bg-nookly-coral/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center space-x-2"
               >
-                <Apple className="w-5 h-5" />
-                <span>Get Early Access</span>
-              </button>
-              <button 
-                onClick={() => handleDownloadClick('android')}
+                <Globe2 className="w-5 h-5" />
+                <span>Open Web App</span>
+              </a>
+              <a 
+                href="https://play.google.com/store/apps/details?id=com.nookly.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all backdrop-blur-sm flex items-center justify-center space-x-2"
               >
                 <Play className="w-5 h-5" />
-                <span>Get Early Access</span>
-              </button>
+                <span>Get on Play Store</span>
+              </a>
             </div>
           </div>
           
@@ -69,12 +63,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      
-      <EmailCollectionModal 
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        platform={selectedPlatform}
-      />
     </section>
   );
 }

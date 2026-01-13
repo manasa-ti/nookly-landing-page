@@ -1,15 +1,6 @@
-import { Apple, Play, Shield, Download, Heart } from "lucide-react";
-import { useState } from "react";
-import EmailCollectionModal from "./email-collection-modal";
+import { Globe2, Play, Shield, Download, Heart } from "lucide-react";
 
 export default function DownloadSection() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedPlatform, setSelectedPlatform] = useState<'ios' | 'android'>('ios');
-
-  const handleDownloadClick = (platform: 'ios' | 'android') => {
-    setSelectedPlatform(platform);
-    setModalOpen(true);
-  };
 
   return (
     <section id="download" className="py-20 bg-nookly-gradient text-white">
@@ -22,27 +13,31 @@ export default function DownloadSection() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <button 
-            onClick={() => handleDownloadClick('ios')}
+          <a 
+            href="https://app.nookly.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-2xl flex items-center space-x-3 transition-all transform hover:scale-105"
           >
-            <Apple className="w-8 h-8" />
+            <Globe2 className="w-8 h-8" />
             <div className="text-left">
-              <div className="text-sm">Get Early Access</div>
-              <div className="text-lg font-semibold">iOS</div>
+              <div className="text-sm">Open Now</div>
+              <div className="text-lg font-semibold">Web App</div>
             </div>
-          </button>
+          </a>
           
-          <button 
-            onClick={() => handleDownloadClick('android')}
+          <a 
+            href="https://play.google.com/store/apps/details?id=com.nookly.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-2xl flex items-center space-x-3 transition-all transform hover:scale-105"
           >
             <Play className="w-8 h-8" />
             <div className="text-left">
-              <div className="text-sm">Get Early Access</div>
+              <div className="text-sm">Download Now</div>
               <div className="text-lg font-semibold">Android</div>
             </div>
-          </button>
+          </a>
         </div>
         
         <p className="text-lg text-blue-100 font-semibold mt-8">
@@ -64,12 +59,6 @@ export default function DownloadSection() {
           </div>
         </div>
       </div>
-      
-      <EmailCollectionModal 
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        platform={selectedPlatform}
-      />
     </section>
   );
 }

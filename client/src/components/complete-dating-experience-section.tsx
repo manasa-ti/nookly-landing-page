@@ -1,4 +1,4 @@
-import { Heart, MessageCircle, Gamepad2, Shield } from "lucide-react";
+import { MessageCircle, Gamepad2, Shield } from "lucide-react";
 
 export default function CompleteDatingExperienceSection() {
   return (
@@ -90,28 +90,6 @@ export default function CompleteDatingExperienceSection() {
                 <span>Safe space to be yourself without fear</span>
               </li>
             </ul>
-          </div>
-        </div>
-        
-        {/* Coming Soon */}
-        <div className="mt-12">
-          <div className="bg-nookly-gradient rounded-3xl p-8 text-white">
-            <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
-                <Heart className="w-8 h-8 text-white" />
-              </div>
-            </div>
-            <h3 className="text-2xl font-bold text-center mb-6">Coming Soon</h3>
-            <div className="grid md:grid-cols-2 gap-6 text-center max-w-3xl mx-auto">
-              <div>
-                <h4 className="font-semibold mb-2">Heat Up Mode</h4>
-                <p className="text-white/80 text-sm">Deeper, more intimate conversations for established connections</p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Shared Experiences</h4>
-                <p className="text-white/80 text-sm">Virtual activities to enjoy together and build memories</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
