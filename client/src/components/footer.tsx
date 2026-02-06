@@ -60,6 +60,7 @@ export default function Footer() {
               <li><a href="https://csae-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Safety</a></li>
               <li><a href="https://privacy-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a></li>
               <li><a href="https://terms-of-use.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="refund-policy.html" className="hover:text-white transition-colors">Refund & Cancellation Policy</a></li>
             </ul>
           </div>
         </div>

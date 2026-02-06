@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancellation & Refund Policy | Nookly</title>
+    <style>
+      :root {
+        --nookly-blue: #1d335f;
+        --nookly-blue-text: #2e458a;
+        --nookly-bg: #f6f7f9;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        color: #1f2937;
+        background: var(--nookly-bg);
+      }
+      .header {
+        background: var(--nookly-blue);
+        color: white;
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .header a:hover { text-decoration: underline; }
+      .brand { font-size: 1.25rem; font-weight: 700; }
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+      }
+      .policy-card {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem 2.5rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      }
+      h1 {
+        color: var(--nookly-blue-text);
+        font-size: 1.75rem;
+        margin: 0 0 0.25rem;
+      }
+      .last-updated {
+        color: #6b7280;
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+      }
+      h2 {
+        color: var(--nookly-blue);
+        font-size: 1.125rem;
+        margin: 1.5rem 0 0.5rem;
+      }
+      h2:first-of-type { margin-top: 0; }
+      p, ul { margin: 0.5rem 0 1rem; }
+      ul { padding-left: 1.5rem; }
+      li { margin-bottom: 0.35rem; }
+      .contact-email { font-weight: 600; }
+      .note-box {
+        background: #fef3c7;
+        border-left: 4px solid #f59e0b;
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+        font-size: 0.9rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+      }
+      .note-box strong { display: block; margin-bottom: 0.5rem; }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="brand">nookly</a>
+      <a href="index.html">← Back to home</a>
+    </header>
+
+    <main class="container">
+      <article class="policy-card">
+        <h1>Cancellation & Refund Policy</h1>
+        <p class="last-updated">Last Updated: February 2, 2026</p>
+
+        <h2>1. Subscription Cancellation</h2>
+        <p>You may cancel your Nookly Premium subscription at any time. Please note that:</p>
+        <ul>
+          <li><strong>Self-Service Cancellation:</strong> Cancellations must be managed through the platform where the purchase was made (e.g., Google Play Store, Apple App Store, or directly via our Web App settings).</li>
+          <li><strong>Access Period:</strong> Upon cancellation, you will continue to have access to the premium features until the end of your current billing cycle.</li>
+          <li><strong>No Partial Credits:</strong> We do not offer prorated refunds or credits for any unused portion of a subscription period.</li>
+        </ul>
+
+        <h2>2. Refund Policy</h2>
+        <p>All purchases made on Nookly are final and non-refundable. This includes:</p>
+        <ul>
+          <li>Subscription fees (Monthly, Quarterly, or Yearly).</li>
+          <li>One-time purchases (e.g., Boosts, Credits, or Virtual Gifts).</li>
+          <li>Unused portions of a subscription.</li>
+        </ul>
+        <p><strong>Exceptions:</strong> Refunds will only be considered under the following limited circumstances:</p>
+        <ul>
+          <li><strong>Technical Error:</strong> If a technical glitch on our end resulted in multiple charges for the same transaction.</li>
+          <li><strong>Legal Mandates:</strong> If local laws in your jurisdiction require a mandatory "cooling-off" period or refund window, we will honor those specific legal requirements.</li>
+        </ul>
+
+        <h2>3. Account Termination</h2>
+        <p>If your account is terminated or suspended for violating our Terms of Service or Community Guidelines, you will not be entitled to a refund for any unused subscription time or virtual items.</p>
+
+        <h2>4. How to Contact Us</h2>
+        <p>If you believe you have been charged in error or have questions regarding your billing, please contact our support team at:</p>
+        <p><strong>Email:</strong> <a href="mailto:app.nookly@gmail.com" class="contact-email">app.nookly@gmail.com</a></p>
+        <p><strong>Response Time:</strong> We aim to respond to all billing inquiries within 3–5 business days.</p>
+
+        <div class="note-box">
+          <strong>Important tips for Razorpay approval</strong>
+          <ul style="margin: 0.5rem 0 0; padding-left: 1.25rem;">
+            <li><strong>The "No Refund" catch:</strong> Even if you don't offer refunds, Razorpay usually insists that you have a "Contact Us" section in the policy so users have a way to dispute accidental double-charges.</li>
+            <li><strong>Visibility:</strong> Place a link to this policy in the footer of your landing page and on your checkout/payment screen. Razorpay auditors check this specifically.</li>
+            <li><strong>App Store rules:</strong> If you eventually launch on iOS, remember that Apple handles all refunds directly, and their policy may override yours.</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

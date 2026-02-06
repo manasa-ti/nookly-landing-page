@@ -4,3 +4,7 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Local / partial client source (not part of deployed build)
+client/
+package-lock.json
