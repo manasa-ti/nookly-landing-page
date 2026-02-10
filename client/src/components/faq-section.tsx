@@ -40,6 +40,22 @@ export default function FAQSection() {
     {
       question: "Is Nookly free?",
       answer: "Yes! Nookly is currently completely free to use with all features available. We're focused on building a strong community first and will introduce optional premium features in the future based on what our users want most."
+    },
+    {
+      question: "Can I change my plan later?",
+      answer: "Yes. You can upgrade or cancel anytime."
+    },
+    {
+      question: "Will I lose my matches if I downgrade?",
+      answer: "No, your matches and chats remain safe."
+    },
+    {
+      question: "Which plan is most popular?",
+      answer: "Most active users choose Private for the balance of features and price."
+    },
+    {
+      question: "How do payments work?",
+      answer: "Subscriptions renew monthly and can be canceled anytime from your account."
     }
   ];
 

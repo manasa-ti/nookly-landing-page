@@ -51,7 +51,8 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-300">
               <li><a href="#features" onClick={handleSmoothScroll("#features")} className="hover:text-white transition-colors">Features</a></li>
               <li><a href="#how-it-works" onClick={handleSmoothScroll("#how-it-works")} className="hover:text-white transition-colors">How It Works</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">AI Assistant</a></li>
+              <li><a href="pricing.html" className="hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="#contact" onClick={handleSmoothScroll("#contact")} className="hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
           
