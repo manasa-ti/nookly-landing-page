@@ -1,3 +1,4 @@
+import React from "react";
 import { Twitter, Instagram, Facebook } from "lucide-react";
 import echoLogo from "@assets/echo_logo.svg";
 
@@ -33,13 +34,13 @@ export default function Footer() {
               Your companion for meaningful connections.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+              {/* <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+              </a> */}
+              <a href="https://www.instagram.com/nookly.app/" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="https://www.facebook.com/Nooklyapp" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
