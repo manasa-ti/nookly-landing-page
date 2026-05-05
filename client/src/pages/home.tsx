@@ -5,7 +5,6 @@ import FeaturesSection from "@/components/features-section";
 import HowItWorksSection from "@/components/how-it-works-section";
 import AIAssistantSection from "@/components/ai-assistant-section";
 import CompleteDatingExperienceSection from "@/components/complete-dating-experience-section";
-import FutureFeaturesSection from "@/components/future-features-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import PricingSection from "@/components/pricing-section";
 import FAQSection from "@/components/faq-section";
@@ -24,7 +23,6 @@ export default function Home() {
       <CompleteDatingExperienceSection />
       <AIAssistantSection />
       <TestimonialsSection />
-      <FutureFeaturesSection />
       <PricingSection />
       <FAQSection />
       <ContactSection />
