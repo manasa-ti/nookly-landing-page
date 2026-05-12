@@ -1,5 +1,5 @@
 import { Globe2, Play } from "lucide-react";
-import mobileAppScreenshot from "@assets/Screenshot_1764935027.png";
+import mobileAppRecording from "@assets/final_demo.mp4";
 
 export default function HeroSection() {
   return (
@@ -46,17 +46,15 @@ export default function HeroSection() {
           </div>
           
           <div className="relative">
-            {/* Mobile App Mockup - Using real screenshot */}
-            <div className="relative mx-auto w-80 h-[640px] bg-black rounded-[3rem] p-2 shadow-2xl">
-              <div className="w-full h-full rounded-[2.5rem] overflow-hidden">
-                <img 
-                  src={mobileAppScreenshot}
-                  alt="Nookly App Interface - Anonymous Dating Profiles"
-                  className="w-full h-full object-cover rounded-[2.5rem]"
-                />
-              </div>
-            </div>
-            
+            <video
+              src={mobileAppRecording}
+              className="block mx-auto w-80 h-auto rounded-2xl border border-white/30 shadow-2xl"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 w-20 h-20 bg-nookly-coral/20 rounded-full animate-pulse"></div>
             <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
