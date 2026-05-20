@@ -48,7 +48,7 @@ export default function HeroSection() {
           <div className="relative">
             <video
               src={mobileAppRecording}
-              className="block mx-auto w-80 h-auto rounded-2xl border border-white/30 shadow-2xl"
+              className="block mx-auto w-64 h-auto rounded-2xl border border-white/30 shadow-2xl"
               autoPlay
               loop
               muted

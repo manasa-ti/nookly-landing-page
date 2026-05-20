@@ -41,6 +41,16 @@ export async function setupVite(app: Express, server: Server) {
   });
 
   app.use(vite.middlewares);
+
+  // Serve standalone HTML pages (pricing, refund policy) from the project root
+  // so dev behavior matches production (where these files are copied into dist/).
+  const projectRoot = path.resolve(import.meta.dirname, "..");
+  for (const file of ["pricing.html", "refund-policy.html"]) {
+    app.get(`/${file}`, (_req, res) => {
+      res.sendFile(path.join(projectRoot, file));
+    });
+  }
+
   app.use("*", async (req, res, next) => {
     const url = req.originalUrl;
 
