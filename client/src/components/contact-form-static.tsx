@@ -52,8 +52,8 @@ export default function ContactFormStatic() {
   };
 
   return (
-    <div className="bg-white rounded-3xl p-8 shadow-lg">
-      <h3 className="text-2xl font-bold text-nookly-blue mb-6">Get in Touch</h3>
+    <div className="bg-nookly-surface border border-nookly-stroke rounded-3xl p-8">
+      <h3 className="text-xl font-bold text-nookly-vio mb-6">Send a message</h3>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField
@@ -104,7 +104,7 @@ export default function ContactFormStatic() {
           
           <Button
             type="submit"
-            className="w-full bg-nookly-coral hover:bg-nookly-coral/90 text-white"
+            className="w-full bg-nookly-gradient shadow-nookly-accent text-white font-bold"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Opening Email..." : "Send Message"}

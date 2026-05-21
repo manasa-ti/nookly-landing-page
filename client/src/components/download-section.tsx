@@ -1,62 +1,55 @@
-import { Globe2, Play, Shield, Download, Heart } from "lucide-react";
+import { Globe2, Play, Shield, Heart } from "lucide-react";
 
 export default function DownloadSection() {
-
   return (
-    <section id="download" className="py-20 bg-nookly-gradient text-white">
+    <section id="download" className="py-20 bg-nookly-gradient text-white scroll-mt-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-          Your Complete Dating Journey Starts Here
+        <h2 className="text-4xl lg:text-5xl font-extrabold mb-4 tracking-tight">
+          Stop scrolling.{" "}
+          <span className="text-nookly-logo">Start connecting.</span>
         </h2>
-        <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-          From first match to lasting connection—and everything in between. Download Nookly and experience dating with a companion who's got your back.
+        <p className="text-lg text-white/80 mb-10 max-w-lg mx-auto">
+          Join nookly today — anonymous by design, judgment-free by promise, and just enough
+          play to make it actually feel good.
         </p>
-        
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <a 
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+          <a
             href="https://app.nookly.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-2xl flex items-center space-x-3 transition-all transform hover:scale-105"
+            className="bg-[#06030c] hover:bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 transition-all hover:scale-[1.02] w-full sm:w-auto justify-center"
           >
             <Globe2 className="w-8 h-8" />
             <div className="text-left">
-              <div className="text-sm">Open Now</div>
-              <div className="text-lg font-semibold">Web App</div>
+              <div className="text-sm text-white/60">Open now</div>
+              <div className="text-lg font-bold">Web App</div>
             </div>
           </a>
-          
-          <a 
+
+          <a
             href="https://play.google.com/store/apps/details?id=com.nookly.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-2xl flex items-center space-x-3 transition-all transform hover:scale-105"
+            className="bg-[#06030c] hover:bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 transition-all hover:scale-[1.02] w-full sm:w-auto justify-center"
           >
             <Play className="w-8 h-8" />
             <div className="text-left">
-              <div className="text-sm">Download Now</div>
-              <div className="text-lg font-semibold">Android</div>
+              <div className="text-sm text-white/60">Download</div>
+              <div className="text-lg font-bold">Android</div>
             </div>
           </a>
         </div>
-        
-        <p className="text-lg text-blue-100 font-semibold mt-8">
-          More than matching. More than messaging. Your complete dating experience.
-        </p>
-        
-        <div className="flex justify-center space-x-8 text-blue-100 mt-6">
-          <div className="flex items-center space-x-2">
-            <Shield className="w-5 h-5 text-nookly-coral" />
-            <span>100% Anonymous</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Download className="w-5 h-5 text-nookly-coral" />
-            <span>Free Download</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Heart className="w-5 h-5 text-nookly-coral" />
-            <span>Complete Dating Experience</span>
-          </div>
+
+        <div className="flex flex-wrap justify-center gap-6 text-sm text-white/75">
+          <span className="flex items-center gap-2">
+            <Shield className="w-4 h-4 text-white" />
+            Anonymous by design
+          </span>
+          <span className="flex items-center gap-2">
+            <Heart className="w-4 h-4 text-white" />
+            Free to start
+          </span>
         </div>
       </div>
     </section>

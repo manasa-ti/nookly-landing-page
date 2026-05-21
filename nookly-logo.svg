@@ -1,0 +1,63 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c4b5fd"></stop>
+      <stop offset="0.5" stop-color="#a78bfa"></stop>
+      <stop offset="1" stop-color="#7c3aed"></stop>
+    </linearGradient>
+    <linearGradient id="gDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b21b6"></stop>
+      <stop offset="1" stop-color="#2a1450"></stop>
+    </linearGradient>
+    <linearGradient id="warmFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fef3c7"></stop>
+      <stop offset="0.55" stop-color="#fcd34d"></stop>
+      <stop offset="1" stop-color="#d97706"></stop>
+    </linearGradient>
+    <radialGradient id="warmth" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fde68a" stop-opacity="0.9"></stop>
+      <stop offset="0.55" stop-color="#fbbf24" stop-opacity="0.4"></stop>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fffbeb"></stop>
+      <stop offset="0.5" stop-color="#fde68a"></stop>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="moonHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c4b5fd" stop-opacity="0.55"></stop>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  <circle cx="80" cy="180" r="2.5" fill="#fffbeb" opacity="0.65"></circle>
+  <circle cx="115" cy="80" r="2" fill="#fffbeb" opacity="0.55"></circle>
+  <circle cx="280" cy="65" r="3" fill="#fffbeb" opacity="0.75"></circle>
+  <circle cx="460" cy="200" r="2" fill="#fffbeb" opacity="0.5"></circle>
+
+  
+  <circle cx="400" cy="110" r="52" fill="url(#moonHalo)"></circle>
+  <circle cx="400" cy="110" r="36" fill="url(#g)"></circle>
+  <ellipse cx="385" cy="96" rx="11" ry="6" fill="#fffaf0" opacity="0.20" transform="rotate(-30 385 96)"></ellipse>
+
+  
+  
+  <rect x="65" y="412" width="40" height="14" rx="6" fill="url(#gDark)"></rect>
+  <rect x="395" y="412" width="40" height="14" rx="6" fill="url(#gDark)"></rect>
+
+  
+  <path fill="url(#g)" fill-rule="evenodd" d="M 250 72&#xA;       C 252 165 158 300 95 415&#xA;       L 405 415&#xA;       C 342 300 248 165 250 72 Z&#xA;&#xA;       M 250 238&#xA;       C 252 290 222 355 210 415&#xA;       L 290 415&#xA;       C 278 355 248 290 250 238 Z"></path>
+
+  
+  <path fill="url(#warmFill)" d="M 250 238&#xA;       C 252 290 222 355 210 415&#xA;       L 290 415&#xA;       C 278 355 248 290 250 238 Z"></path>
+
+  
+  <ellipse cx="250" cy="190" rx="42" ry="32" fill="url(#warmth)"></ellipse>
+  <circle cx="250" cy="184" r="9" fill="url(#spark)"></circle>
+  <circle cx="250" cy="182" r="3.5" fill="#fffbeb"></circle>
+
+  
+  <rect x="55" y="426" width="390" height="5" rx="2.5" fill="url(#gDark)" opacity="0.5"></rect>
+  
+</svg>

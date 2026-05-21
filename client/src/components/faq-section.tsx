@@ -6,87 +6,65 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "What is Nookly?",
-      answer: "Nookly is a companion app designed for adults who feel lonely, regardless of their relationship status. It's a safe, private space to find genuine connections through meaningful conversations and interactive games—without the pressure of dating or revealing your identity."
+      question: "What is nookly?",
+      answer:
+        "Anonymous companionship for adults 30–50. Browse real profiles, chat, and play in-chat games — no photos required.",
     },
     {
-      question: "How is Nookly different from dating apps?",
-      answer: "Unlike dating apps focused on romance and swiping, Nookly is about companionship and authentic human connection. You don't need photos, you can stay completely anonymous, and there's no pressure for commitment. Whether you're single, in a relationship, or just need someone to talk to—Nookly welcomes you."
+      question: "How is it different from dating apps?",
+      answer:
+        "No swiping pressure, no algorithm match scores. You read stories, reach out when it feels right, and stay anonymous until you choose.",
     },
     {
-      question: "What are the interactive games?",
-      answer: "We offer four engaging games—Truth or Thrill, Memory Sparks, Would You Rather, and Guess Me—designed to help you connect with companions in a fun, meaningful way. These games break the ice naturally and help you learn about each other beyond surface-level chat."
+      question: "Do I need a photo or real name?",
+      answer: "No. You control what you share and when.",
     },
     {
-      question: "Do I have to share my photo or real name?",
-      answer: "Absolutely not. Privacy is at the core of Nookly. You can use a custom username, skip adding photos entirely, and share only what you're comfortable with. Your identity is yours to control—always."
+      question: "What are the games?",
+      answer:
+        "Icebreakers include Truth or Thrill, Memory Sparks, Would You Rather, and Guess Me. For established matches, Heat Up offers progressive, consent-based intimacy prompts with a heat meter — already in the app.",
     },
     {
-      question: "How do AI conversation starters work?",
-      answer: "When you match with someone, our AI suggests personalized conversation topics based on your shared interests and profiles. This helps break the ice naturally and ensures you never face awkward silences or boring 'hey' messages."
+      question: "Is it private?",
+      answer:
+        "PIN-lock the app, encrypted chats, and optional anonymity. Your space stays yours.",
     },
     {
-      question: "Is Nookly safe and private?",
-      answer: "Yes. All your information remains private, and you control what you share and when. We've built Nookly to be a judgment-free, safe space where you can be yourself without fear of exposure or criticism."
+      question: "Is it free?",
+      answer:
+        "Yes to start. Paid plans add more starters, games, filters, and app lock. See pricing for details.",
     },
-    {
-      question: "Who is Nookly for?",
-      answer: "Nookly is for anyone between 30-50 who experiences loneliness—professionals with busy lives, people in relationships seeking platonic connection, individuals who value privacy, or anyone tired of superficial interactions. If you need genuine companionship without complications, Nookly is for you."
-    },
-    {
-      question: "What features are coming soon?",
-      answer: "We're constantly improving Nookly based on user feedback. Upcoming features include Heat Up mode for deeper conversations, shared virtual experiences to enjoy together, and more interactive ways to build meaningful connections."
-    },
-    {
-      question: "Is Nookly free?",
-      answer: "Yes! Nookly is currently completely free to use with all features available. We're focused on building a strong community first and will introduce optional premium features in the future based on what our users want most."
-    },
-    {
-      question: "Can I change my plan later?",
-      answer: "Yes. You can upgrade or cancel anytime."
-    },
-    {
-      question: "Will I lose my matches if I downgrade?",
-      answer: "No, your matches and chats remain safe."
-    },
-    {
-      question: "Which plan is most popular?",
-      answer: "Most active users choose Private for the balance of features and price."
-    },
-    {
-      question: "How do payments work?",
-      answer: "Subscriptions renew monthly and can be canceled anytime from your account."
-    }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-nookly-subtle">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
-            Frequently Asked Questions
+        <div className="text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-3 tracking-tight">
+            FAQ
           </h2>
-          <p className="text-xl text-gray-600">
-            Everything you need to know about finding companionship on Nookly
-          </p>
+          <p className="text-nookly-mid">Quick answers about nookly</p>
         </div>
-        
-        <div className="space-y-6">
+
+        <div className="space-y-3">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
+            <div
+              key={index}
+              className="bg-nookly-surface border border-nookly-stroke rounded-2xl overflow-hidden"
+            >
               <button
-                className="w-full flex items-center justify-between text-left"
+                className="w-full flex items-center justify-between text-left px-6 py-5"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <h3 className="text-xl font-bold text-blue-900 pr-4">{faq.question}</h3>
+                <h3 className="text-base font-bold text-nookly-vio pr-4">{faq.question}</h3>
                 {openIndex === index ? (
-                  <ChevronUp className="w-6 h-6 text-blue-900 flex-shrink-0" />
+                  <ChevronUp className="w-5 h-5 text-nookly-accent flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="w-6 h-6 text-blue-900 flex-shrink-0" />
+                  <ChevronDown className="w-5 h-5 text-nookly-accent flex-shrink-0" />
                 )}
               </button>
               {openIndex === index && (
-                <p className="text-gray-600 mt-4 leading-relaxed">
+                <p className="text-nookly-mid text-sm leading-relaxed px-6 pb-5 -mt-1">
                   {faq.answer}
                 </p>
               )}

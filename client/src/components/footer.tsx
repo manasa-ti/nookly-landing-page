@@ -1,74 +1,105 @@
-import React from "react";
-import { Twitter, Instagram, Facebook } from "lucide-react";
-import echoLogo from "@assets/echo_logo.svg";
+import { Instagram, Facebook } from "lucide-react";
+import nooklyLogo from "@assets/nookly-logo.svg";
 
 export default function Footer() {
   const handleSmoothScroll = (href: string) => (e: React.MouseEvent) => {
     e.preventDefault();
     const target = document.querySelector(href);
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
+  const linkClass = "text-nookly-mid hover:text-white transition-colors";
+
   return (
-    <footer className="bg-nookly-blue text-white py-16">
+    <footer className="bg-nookly-bg border-t border-nookly-stroke text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src={echoLogo} 
-                alt="Nookly Logo" 
-                className="w-12 h-12 object-contain rounded-xl"
-              />
+            <div className="flex items-center gap-3 mb-6">
+              <img src={nooklyLogo} alt="nookly" className="w-12 h-12 rounded-xl" />
               <div>
-                <span className="text-2xl font-bold">nookly</span>
-                <p className="text-sm text-gray-400 -mt-1">No more lonely</p>
+                <span className="text-2xl font-extrabold text-nookly-logo leading-none">nookly</span>
+                <p className="text-[11px] text-nookly-lo font-medium tracking-wide mt-0.5">No more lonely</p>
               </div>
             </div>
-            <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Your companion for meaningful connections.
+            <p className="text-nookly-mid leading-relaxed mb-6 max-w-md">
+              Anonymous companionship — browse, chat, and play without the pressure.
             </p>
-            <div className="flex space-x-4">
-              {/* <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a> */}
-              <a href="https://www.instagram.com/nookly.app/" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+            <div className="flex gap-4">
+              <a
+                href="https://www.instagram.com/nookly.app/"
+                className="w-10 h-10 bg-white/5 border border-nookly-stroke rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
+                aria-label="Instagram"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.facebook.com/Nooklyapp" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a
+                href="https://www.facebook.com/Nooklyapp"
+                className="w-10 h-10 bg-white/5 border border-nookly-stroke rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-bold mb-4">Product</h4>
-            <ul className="space-y-3 text-gray-300">
-              <li><a href="#features" onClick={handleSmoothScroll("#features")} className="hover:text-white transition-colors">Features</a></li>
-              <li><a href="#how-it-works" onClick={handleSmoothScroll("#how-it-works")} className="hover:text-white transition-colors">How It Works</a></li>
-              <li><a href="pricing.html" className="hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#contact" onClick={handleSmoothScroll("#contact")} className="hover:text-white transition-colors">Contact Us</a></li>
+            <h4 className="text-sm font-bold tracking-wider uppercase text-nookly-accent mb-4">Product</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="#features" onClick={handleSmoothScroll("#features")} className={linkClass}>
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#how-it-works" onClick={handleSmoothScroll("#how-it-works")} className={linkClass}>
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a href="pricing.html" className={linkClass}>
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={handleSmoothScroll("#contact")} className={linkClass}>
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-bold mb-4">Support</h4>
-            <ul className="space-y-3 text-gray-300">
-              <li><a href="https://csae-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Safety</a></li>
-              <li><a href="https://privacy-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="https://terms-of-use.nookly.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms of Service</a></li>
-              <li><a href="refund-policy.html" className="hover:text-white transition-colors">Refund & Cancellation Policy</a></li>
+            <h4 className="text-sm font-bold tracking-wider uppercase text-nookly-accent mb-4">Support</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://csae-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  Safety
+                </a>
+              </li>
+              <li>
+                <a href="https://privacy-policy.nookly.app/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="https://terms-of-use.nookly.app/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="refund-policy.html" className={linkClass}>
+                  Refund & Cancellation
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                      <p>&copy; 2025 Nookly. All rights reserved. No more lonely.</p>
+
+        <div className="border-t border-nookly-stroke mt-12 pt-8 text-center text-nookly-lo text-sm">
+          <p>&copy; 2025 Nookly. All rights reserved.</p>
         </div>
       </div>
     </footer>
