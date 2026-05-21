@@ -3,26 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pricing & Plans | Nookly</title>
+    <title>Pricing & Plans | nookly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="nookly-logo.svg" />
     <style>
       :root {
-        --nookly-blue: #1d335f;
-        --nookly-blue-text: #2e458a;
-        --nookly-coral: #e05c61;
-        --nookly-bg: #f6f7f9;
-        --nookly-gradient: linear-gradient(135deg, #1d335f, #514a7b);
+        --bg-page: #06030c;
+        --bg: #0a0612;
+        --surface: #181126;
+        --accent: #8b5cf6;
+        --accent-deep: #6d28d9;
+        --logo: #a48bf5;
+        --text-vio: #e9dfff;
+        --text-mid: rgba(255, 255, 255, 0.78);
+        --text-lo: rgba(255, 255, 255, 0.52);
+        --stroke: rgba(139, 92, 246, 0.16);
+        --heart: #f43f5e;
+        --gradient: linear-gradient(180deg, #8b5cf6 0%, #6d28d9 100%);
       }
       * { box-sizing: border-box; }
       body {
         margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+        font-family: 'Manrope', system-ui, sans-serif;
         line-height: 1.6;
-        color: #1f2937;
-        background: var(--nookly-bg);
+        color: #fff;
+        background:
+          radial-gradient(ellipse at 20% 0%, rgba(124, 58, 237, 0.14) 0%, transparent 50%),
+          radial-gradient(ellipse at 80% 100%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+          var(--bg-page);
       }
       .header {
-        background: var(--nookly-blue);
-        color: white;
+        background: rgba(6, 3, 12, 0.9);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--stroke);
         padding: 1rem 1.5rem;
         display: flex;
         align-items: center;
@@ -30,125 +45,101 @@
         flex-wrap: wrap;
         gap: 0.75rem;
       }
-      .header a {
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-      }
-      .header a:hover { text-decoration: underline; }
-      .brand { font-size: 1.25rem; font-weight: 700; }
+      .header a { color: var(--text-mid); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+      .header a:hover { color: #fff; }
+      .brand { font-size: 1.25rem; font-weight: 800; color: var(--logo); letter-spacing: -0.02em; }
       .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-      .hero {
-        background: var(--nookly-blue);
-        color: white;
-        padding: 4rem 1.5rem;
-        text-align: center;
-      }
-      .hero h1 { font-size: 2.25rem; margin: 0 0 1rem; }
-      .hero p { margin: 0.5rem 0; opacity: 0.9; font-size: 1.125rem; }
-      .hero .sub { opacity: 0.8; font-weight: 500; margin-bottom: 2rem; }
+      .hero { padding: 4rem 1.5rem; text-align: center; }
+      .hero .crumb { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); }
+      .hero h1 { font-size: 2.5rem; margin: 0.75rem 0 1rem; font-weight: 800; letter-spacing: -0.02em; }
+      .hero p { margin: 0.5rem 0; color: var(--text-mid); font-size: 1.125rem; max-width: 36rem; margin-left: auto; margin-right: auto; }
       .btn-row { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem; }
       .btn {
         display: inline-block;
         padding: 1rem 2rem;
-        border-radius: 9999px;
-        font-weight: 600;
+        border-radius: 1rem;
+        font-weight: 700;
         text-decoration: none;
-        transition: opacity 0.2s;
+        transition: transform 0.2s, opacity 0.2s;
       }
-      .btn:hover { opacity: 0.9; }
-      .btn-primary { background: var(--nookly-coral); color: white; }
-      .btn-secondary { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3); }
+      .btn:hover { transform: scale(1.02); opacity: 0.95; }
+      .btn-primary { background: var(--gradient); color: white; box-shadow: 0 12px 28px rgba(109, 40, 217, 0.45); }
+      .btn-secondary { background: rgba(255, 255, 255, 0.05); color: white; border: 1px solid var(--stroke); }
       .section { padding: 4rem 0; }
-      .section-white { background: white; }
-      .section-subtle { background: #eef0f3; }
-      .section-gradient { background: var(--nookly-gradient); color: white; padding: 4rem 1.5rem; text-align: center; }
-      .section-gradient a { color: white; }
-      .section h2 { text-align: center; color: var(--nookly-blue-text); font-size: 1.875rem; margin: 0 0 2rem; }
+      .section h2 { text-align: center; color: #fff; font-size: 1.75rem; margin: 0 0 2rem; font-weight: 800; }
       .plans { display: grid; gap: 1.5rem; grid-template-columns: 1fr; max-width: 1100px; margin: 0 auto; }
       @media (min-width: 768px) { .plans { grid-template-columns: repeat(3, 1fr); } }
       .plan {
-        background: white;
+        background: var(--surface);
         border-radius: 1.5rem;
         padding: 2rem;
-        border: 2px solid #e5e7eb;
+        border: 1px solid var(--stroke);
         display: flex;
         flex-direction: column;
       }
-      .plan.popular { border-color: var(--nookly-blue); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); position: relative; }
+      .plan.popular { border-color: rgba(139, 92, 246, 0.45); box-shadow: 0 10px 40px rgba(109, 40, 217, 0.25); position: relative; }
       .plan.popular .badge {
         position: absolute;
         top: -0.75rem;
         left: 50%;
         transform: translateX(-50%);
-        background: var(--nookly-blue);
+        background: var(--gradient);
         color: white;
-        font-size: 0.75rem;
-        font-weight: 700;
+        font-size: 0.7rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
         padding: 0.25rem 0.75rem;
         border-radius: 9999px;
       }
-      .plan h3 { font-size: 1.5rem; color: var(--nookly-blue-text); margin: 0 0 0.5rem; text-align: center; }
-      .plan .price { font-size: 1.5rem; font-weight: 700; color: var(--nookly-blue-text); text-align: center; margin: 0.5rem 0; }
-      .plan .price span { font-size: 1rem; font-weight: 400; color: #6b7280; }
-      .plan .desc { color: #6b7280; text-align: center; font-size: 0.875rem; margin-bottom: 1rem; }
+      .plan h3 { font-size: 1.35rem; color: var(--text-vio); margin: 0 0 0.5rem; text-align: center; font-weight: 800; }
+      .plan .price { font-size: 1.5rem; font-weight: 800; color: #fff; text-align: center; margin: 0.5rem 0; }
+      .plan .price span { font-size: 1rem; font-weight: 500; color: var(--text-lo); }
+      .plan .desc { color: var(--text-mid); text-align: center; font-size: 0.875rem; margin-bottom: 1rem; }
       .plan ul { list-style: none; padding: 0; margin: 0 0 1rem; flex-grow: 1; }
-      .plan li { padding: 0.35rem 0 0.35rem 1.5rem; color: #374151; position: relative; }
+      .plan li { padding: 0.35rem 0 0.35rem 1.5rem; color: var(--text-mid); font-size: 0.9rem; position: relative; }
       .plan li::before {
         content: "✓";
         position: absolute;
         left: 0;
-        color: var(--nookly-coral);
+        color: var(--accent);
         font-weight: 700;
-        font-size: 0.9rem;
       }
-      .plan .best { font-size: 0.875rem; color: #6b7280; margin-bottom: 1rem; }
-      .plan .btn { text-align: center; margin-top: auto; display: block; }
-      .plan .btn-free { background: var(--nookly-blue); color: white; }
-      .plan .btn-private { background: var(--nookly-coral); color: white; }
-      .plan .btn-premium { background: var(--nookly-blue); color: white; }
-      .value-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; max-width: 1100px; margin: 0 auto; }
+      .plan .best { font-size: 0.8rem; color: var(--text-lo); margin-bottom: 1rem; }
+      .plan .btn { text-align: center; margin-top: auto; display: block; width: 100%; }
+      .plan .btn-plan { background: var(--gradient); color: white; }
+      .plan .btn-plan-alt { background: rgba(139, 92, 246, 0.15); color: var(--text-vio); border: 1px solid var(--stroke); }
+      .value-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; max-width: 1100px; margin: 0 auto; }
       @media (min-width: 768px) { .value-grid { grid-template-columns: repeat(3, 1fr); } }
       .value-card {
-        background: white;
+        background: var(--surface);
+        border: 1px solid var(--stroke);
         border-radius: 1rem;
-        padding: 2rem;
+        padding: 1.75rem;
         text-align: center;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
       }
-      .value-card .icon {
-        width: 3.5rem; height: 3.5rem;
-        background: var(--nookly-gradient);
-        border-radius: 0.75rem;
-        margin: 0 auto 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 1.5rem;
-      }
-      .value-card h3 { color: var(--nookly-blue-text); font-size: 1.25rem; margin: 0 0 0.5rem; }
-      .value-card p { color: #6b7280; margin: 0; }
+      .value-card h3 { color: var(--text-vio); font-size: 1.1rem; margin: 0 0 0.5rem; font-weight: 700; }
+      .value-card p { color: var(--text-mid); margin: 0; font-size: 0.9rem; }
       .faq-wrap { max-width: 42rem; margin: 0 auto; }
-      .faq-item { background: #f9fafb; border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 1rem; }
-      .faq-item summary { font-weight: 600; cursor: pointer; list-style: none; }
+      .faq-item { background: var(--surface); border: 1px solid var(--stroke); border-radius: 0.75rem; padding: 1.25rem; margin-bottom: 0.75rem; }
+      .faq-item summary { font-weight: 700; color: var(--text-vio); cursor: pointer; list-style: none; }
       .faq-item summary::-webkit-details-marker { display: none; }
-      .faq-item summary::after { content: " ▼"; font-size: 0.75rem; color: var(--nookly-blue-text); }
-      .faq-item[open] summary::after { content: " ▲"; }
-      .faq-item p { margin: 0.75rem 0 0; color: #6b7280; }
+      .faq-item p { margin: 0.75rem 0 0; color: var(--text-mid); font-size: 0.9rem; }
+      .cta { text-align: center; padding: 4rem 1.5rem; background: var(--gradient); border-radius: 0; }
+      .cta h2 { color: white; margin-bottom: 0.5rem; }
+      .cta p { color: rgba(255,255,255,0.85); margin-bottom: 2rem; }
     </style>
   </head>
   <body>
     <header class="header">
       <a href="./" class="brand">nookly</a>
-      <a href="./">← Back to home</a>
+      <a href="./">← Home</a>
     </header>
 
     <section class="hero">
       <div class="container">
+        <p class="crumb">Plans</p>
         <h1>Choose how you connect</h1>
-        <p>Start free and upgrade anytime to unlock smarter conversations, deeper connections, and more ways to break the ice.</p>
-        <p class="sub">No commitment. Cancel anytime.</p>
+        <p>Start free. Upgrade for more privacy, games, and conversation starters.</p>
         <div class="btn-row">
           <a href="./#download" class="btn btn-primary">Start Free</a>
           <a href="#plans" class="btn btn-secondary">See Plans</a>
@@ -156,109 +147,94 @@
       </div>
     </section>
 
-    <section id="plans" class="section section-white">
+    <section id="plans" class="section">
       <div class="container">
         <div class="plans">
           <div class="plan">
-            <h3>🆓 FREE</h3>
+            <h3>Free</h3>
             <p class="price">₹0 <span>/ month</span></p>
-            <p class="desc">Get started and explore the basics</p>
-            <p class="best" style="margin-bottom: 1rem;">Perfect for trying the app and meeting new people.</p>
+            <p class="desc">Explore the basics</p>
             <ul>
               <li>10 AI starters per month</li>
-              <li>Bonding games – 1 session per match, 3 total turns</li>
-              <li>Access to 1 game</li>
-              <li>Standard experience</li>
+              <li>1 bonding game per match</li>
+              <li>1 game unlocked</li>
             </ul>
-            <p class="best"><strong>Best for:</strong> Casual users who want to explore the app.</p>
-            <a href="./#download" class="btn btn-free">Start Free</a>
+            <p class="best"><strong>Best for:</strong> Trying nookly.</p>
+            <a href="./#download" class="btn btn-plan">Start Free</a>
           </div>
           <div class="plan popular">
             <span class="badge">POPULAR</span>
-            <h3>🔒 PRIVATE</h3>
+            <h3>Private</h3>
             <p class="price">₹199 <span>/ month</span></p>
-            <p class="desc">More control. More conversations.</p>
-            <p class="desc">For people who want better privacy and more ways to connect.</p>
-            <p class="best" style="margin-top:0.5rem;"><strong>Everything in Free, plus:</strong></p>
+            <p class="desc">More control & conversations</p>
             <ul>
               <li>30 AI starters per month</li>
               <li>Unlimited bonding games</li>
-              <li>Profile filters to find better matches</li>
-              <li>App lock for added privacy</li>
-              <li>Username control</li>
+              <li>Profile filters</li>
+              <li>App lock</li>
             </ul>
-            <p class="best"><strong>Best for:</strong> Active users who want privacy and flexibility.</p>
-            <a href="./#download" class="btn btn-private">Upgrade to Private</a>
+            <p class="best"><strong>Best for:</strong> Active users who value privacy.</p>
+            <a href="./#download" class="btn btn-plan">Upgrade to Private</a>
           </div>
           <div class="plan">
-            <h3>🔥 PREMIUM</h3>
+            <h3>Premium</h3>
             <p class="price">₹399 <span>/ month</span></p>
-            <p class="desc">The complete experience</p>
-            <p class="desc">Unlock everything and enjoy the most engaging way to connect.</p>
-            <p class="best" style="margin-top:0.5rem;"><strong>Everything in Private, plus:</strong></p>
+            <p class="desc">The full experience</p>
             <ul>
               <li>60 AI starters per month</li>
-              <li>Unlimited bonding with advanced prompts</li>
-              <li>Unlimited intimacy games</li>
-              <li>Priority experience (faster features, best experience)</li>
+              <li>Unlimited bonding + intimacy games</li>
+              <li>Priority experience</li>
             </ul>
-            <p class="best"><strong>Best for:</strong> Power users who want the full experience.</p>
-            <a href="./#download" class="btn btn-premium">Go Premium</a>
+            <p class="best"><strong>Best for:</strong> Power users.</p>
+            <a href="./#download" class="btn btn-plan-alt">Go Premium</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-subtle">
+    <section class="section">
       <div class="container">
-        <h2>Why Upgrade?</h2>
+        <h2>Why upgrade?</h2>
         <div class="value-grid">
           <div class="value-card">
-            <div class="icon">✨</div>
-            <h3>Break the ice effortlessly</h3>
-            <p>AI starters help you begin conversations naturally.</p>
+            <h3>Break the ice</h3>
+            <p>AI starters and games help conversations start naturally.</p>
           </div>
           <div class="value-card">
-            <div class="icon">💬</div>
-            <h3>Keep conversations engaging</h3>
-            <p>Games and prompts make chatting more fun and meaningful.</p>
+            <h3>Stay engaged</h3>
+            <p>Prompts and games keep chats meaningful, not awkward.</p>
           </div>
           <div class="value-card">
-            <div class="icon">🔒</div>
-            <h3>Stay private and in control</h3>
-            <p>Advanced features give you control over your profile and experience.</p>
+            <h3>Stay private</h3>
+            <p>App lock, filters, and anonymity controls.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-white">
+    <section class="section">
       <div class="container faq-wrap">
-        <h2>Pricing FAQs</h2>
+        <h2>Pricing FAQ</h2>
         <details class="faq-item">
           <summary>Can I change my plan later?</summary>
-          <p>Yes. You can upgrade or cancel anytime.</p>
+          <p>Yes. Upgrade or cancel anytime.</p>
         </details>
         <details class="faq-item">
           <summary>Will I lose my matches if I downgrade?</summary>
-          <p>No, your matches and chats remain safe.</p>
+          <p>No — matches and chats stay safe.</p>
         </details>
         <details class="faq-item">
           <summary>Which plan is most popular?</summary>
-          <p>Most active users choose Private for the balance of features and price.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How do payments work?</summary>
-          <p>Subscriptions renew monthly and can be canceled anytime from your account.</p>
+          <p>Most active users choose Private.</p>
         </details>
       </div>
     </section>
 
-    <section class="section-gradient">
+    <section class="cta">
       <div class="container">
-        <h2 style="color:white;margin-bottom:0.5rem;">Ready to connect better?</h2>
-        <p style="opacity:0.9;margin-bottom:2rem;">Join now and start meeting people in a more meaningful way.</p>
-        <a href="./#download" class="btn btn-primary">Start Free</a>
+        <h2>Ready when you are</h2>
+        <p>Start free — no commitment.</p>
+        <a href="./#download" class="btn btn-primary" style="background:#06030c;border:1px solid rgba(255,255,255,0.2)">Get nookly</a>
       </div>
     </section>
   </body>
