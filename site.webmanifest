@@ -1,0 +1,21 @@
+{
+  "name": "nookly",
+  "short_name": "nookly",
+  "description": "Anonymous companionship — browse, chat, and play without the pressure.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06030c",
+  "theme_color": "#06030c",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
