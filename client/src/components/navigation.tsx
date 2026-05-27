@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import nooklyLogo from "@assets/nookly-logo.svg";
+import appIcon from "@assets/app-icon.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,7 +23,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <a href="#" className="flex items-center gap-3">
             <img
-              src={nooklyLogo}
+              src={appIcon}
               alt="nookly"
               className="w-9 h-9 rounded-xl"
             />

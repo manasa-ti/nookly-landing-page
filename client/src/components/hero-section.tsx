@@ -58,14 +58,14 @@ export default function HeroSection() {
 
           <div className="relative flex justify-center lg:justify-end">
             <div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-[520px] rounded-[32px] opacity-50 blur-3xl pointer-events-none"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[230px] h-[468px] rounded-[32px] opacity-50 blur-3xl pointer-events-none"
               style={{ background: "radial-gradient(circle, rgba(139,92,246,0.4) 0%, transparent 70%)" }}
               aria-hidden
             />
             <img
               src={appScreenshot}
               alt="nookly app — discover connections screen"
-              className="relative w-[min(100%,280px)] sm:w-[300px] h-auto rounded-[28px] border-[6px] border-[rgba(116,119,117,0.5)] shadow-[0_30px_80px_rgba(0,0,0,0.5)]"
+              className="relative w-[min(100%,252px)] sm:w-[270px] h-auto rounded-[28px] border-[6px] border-[rgba(116,119,117,0.5)] shadow-[0_30px_80px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>

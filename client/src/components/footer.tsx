@@ -1,5 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
-import nooklyLogo from "@assets/nookly-logo.svg";
+import appIcon from "@assets/app-icon.png";
 
 export default function Footer() {
   const handleSmoothScroll = (href: string) => (e: React.MouseEvent) => {
@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <img src={nooklyLogo} alt="nookly" className="w-12 h-12 rounded-xl" />
+              <img src={appIcon} alt="nookly" className="w-12 h-12 rounded-xl" />
               <div>
                 <span className="text-2xl font-extrabold text-nookly-logo leading-none">nookly</span>
                 <p className="text-[11px] text-nookly-lo font-medium tracking-wide mt-0.5">No more lonely</p>
