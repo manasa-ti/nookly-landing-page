@@ -1,7 +1,13 @@
 import { Globe2, Play } from "lucide-react";
 import appScreenshot from "@assets/app-discover-screenshot.png";
+import { track, withUtm } from "@/lib/analytics";
 
 export default function HeroSection() {
+  const webAppHref = withUtm("https://app.nookly.app");
+  const playStoreHref = withUtm(
+    "https://play.google.com/store/apps/details?id=com.nookly.app",
+  );
+
   return (
     <section
       className="pt-28 pb-20 text-white overflow-hidden"
@@ -36,19 +42,30 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
-                href="https://app.nookly.app"
+                href={webAppHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-nookly-gradient shadow-nookly-accent text-white px-8 py-4 rounded-2xl text-lg font-bold transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
+                onClick={() => {
+                  track("cta_click", {
+                    cta_id: "open_web_app",
+                    cta_text: "Open Web App",
+                    section_id: "hero",
+                    href: webAppHref,
+                  });
+                }}
               >
                 <Globe2 className="w-5 h-5" />
                 <span>Open Web App</span>
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=com.nookly.app"
+                href={playStoreHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#181126] hover:bg-[#221638] text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all border border-nookly-stroke flex items-center justify-center gap-2"
+                onClick={() => {
+                  track("play_store_click", { placement: "hero", href: playStoreHref });
+                }}
               >
                 <Play className="w-5 h-5" />
                 <span>Get on Play Store</span>

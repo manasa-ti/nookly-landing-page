@@ -1,5 +1,6 @@
 import { Instagram, Facebook } from "lucide-react";
 import appIcon from "@assets/app-icon.png";
+import { track } from "@/lib/analytics";
 
 export default function Footer() {
   const handleSmoothScroll = (href: string) => (e: React.MouseEvent) => {
@@ -32,6 +33,14 @@ export default function Footer() {
                 href="https://www.instagram.com/nookly.app/"
                 className="w-10 h-10 bg-white/5 border border-nookly-stroke rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
                 aria-label="Instagram"
+                onClick={() => {
+                  track("cta_click", {
+                    cta_id: "footer_instagram",
+                    cta_text: "Instagram",
+                    section_id: "footer",
+                    href: "https://www.instagram.com/nookly.app/",
+                  });
+                }}
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -39,6 +48,14 @@ export default function Footer() {
                 href="https://www.facebook.com/Nooklyapp"
                 className="w-10 h-10 bg-white/5 border border-nookly-stroke rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
                 aria-label="Facebook"
+                onClick={() => {
+                  track("cta_click", {
+                    cta_id: "footer_facebook",
+                    cta_text: "Facebook",
+                    section_id: "footer",
+                    href: "https://www.facebook.com/Nooklyapp",
+                  });
+                }}
               >
                 <Facebook className="w-5 h-5" />
               </a>
@@ -59,7 +76,18 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="pricing.html" className={linkClass}>
+                <a
+                  href="pricing.html"
+                  className={linkClass}
+                  onClick={() => {
+                    track("cta_click", {
+                      cta_id: "footer_pricing",
+                      cta_text: "Pricing",
+                      section_id: "footer",
+                      href: "pricing.html",
+                    });
+                  }}
+                >
                   Pricing
                 </a>
               </li>
@@ -90,7 +118,18 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="refund-policy.html" className={linkClass}>
+                <a
+                  href="refund-policy.html"
+                  className={linkClass}
+                  onClick={() => {
+                    track("cta_click", {
+                      cta_id: "footer_refund_policy",
+                      cta_text: "Refund & Cancellation",
+                      section_id: "footer",
+                      href: "refund-policy.html",
+                    });
+                  }}
+                >
                   Refund & Cancellation
                 </a>
               </li>

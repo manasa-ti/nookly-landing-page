@@ -9,6 +9,27 @@
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="icon-192.png" sizes="192x192" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <script>
+      window.__NOOKLY_GA4_MEASUREMENT_ID__ = "__GA4_MEASUREMENT_ID__";
+      window.__NOOKLY_GA4_DEBUG__ = "__GA4_DEBUG__" === "true";
+    </script>
+    <script>
+      (function () {
+        var id = window.__NOOKLY_GA4_MEASUREMENT_ID__;
+        if (!id || id.indexOf("G-") !== 0) return;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        window.gtag = window.gtag || gtag;
+        gtag("js", new Date());
+        gtag("config", id, { send_page_view: true, debug_mode: !!window.__NOOKLY_GA4_DEBUG__ });
+      })();
+    </script>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nookly.app/pricing.html" />
     <meta property="og:title" content="Pricing & Plans | nookly" />

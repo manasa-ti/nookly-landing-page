@@ -1,6 +1,12 @@
 import { Globe2, Play, Shield, Heart } from "lucide-react";
+import { track, withUtm } from "@/lib/analytics";
 
 export default function DownloadSection() {
+  const webAppHref = withUtm("https://app.nookly.app");
+  const playStoreHref = withUtm(
+    "https://play.google.com/store/apps/details?id=com.nookly.app",
+  );
+
   return (
     <section id="download" className="py-20 bg-nookly-gradient text-white scroll-mt-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -15,10 +21,18 @@ export default function DownloadSection() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
           <a
-            href="https://app.nookly.app"
+            href={webAppHref}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#06030c] hover:bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 transition-all hover:scale-[1.02] w-full sm:w-auto justify-center"
+            onClick={() => {
+              track("cta_click", {
+                cta_id: "open_web_app",
+                cta_text: "Web App",
+                section_id: "download",
+                href: webAppHref,
+              });
+            }}
           >
             <Globe2 className="w-8 h-8" />
             <div className="text-left">
@@ -28,10 +42,13 @@ export default function DownloadSection() {
           </a>
 
           <a
-            href="https://play.google.com/store/apps/details?id=com.nookly.app"
+            href={playStoreHref}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#06030c] hover:bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 transition-all hover:scale-[1.02] w-full sm:w-auto justify-center"
+            onClick={() => {
+              track("play_store_click", { placement: "download", href: playStoreHref });
+            }}
           >
             <Play className="w-8 h-8" />
             <div className="text-left">
