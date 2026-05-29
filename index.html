@@ -7,6 +7,29 @@
     <meta name="theme-color" content="#06030c" />
     <title>nookly · No more lonely</title>
 
+    <script>
+      // Injected at build time by Vite (see .env.example)
+      window.__NOOKLY_GA4_MEASUREMENT_ID__ = "G-K1XFGBP78P";
+      window.__NOOKLY_GA4_DEBUG__ = "false" === "true";
+    </script>
+    <script>
+      (function () {
+        var id = window.__NOOKLY_GA4_MEASUREMENT_ID__;
+        if (!id || id.indexOf("G-") !== 0) return;
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        window.gtag = window.gtag || gtag;
+        gtag("js", new Date());
+        gtag("config", id, { send_page_view: true, debug_mode: !!window.__NOOKLY_GA4_DEBUG__ });
+      })();
+    </script>
+
     <link rel="icon" href="./favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="./icon-192.png" sizes="192x192" type="image/png" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
@@ -25,7 +48,7 @@
     <meta name="twitter:title" content="nookly · No more lonely" />
     <meta name="twitter:description" content="Anonymous companionship for adults. Browse real people, stay private, and break the ice with games." />
     <meta name="twitter:image" content="https://nookly.app/og-image.png" />
-    <script type="module" crossorigin src="./assets/index-Dc85fUFy.js"></script>
+    <script type="module" crossorigin src="./assets/index-DLb9qIXW.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-C7IEzcWR.css">
   </head>
   <body>
